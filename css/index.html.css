@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header-item.logo-x {
+    padding: 0 10px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+header-item#logo-name {
+    font-family: "Uni Sans CAPS";
+    font-weight: bold;
+}
