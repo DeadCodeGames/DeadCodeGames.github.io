@@ -14,3 +14,15 @@ header-item#logo-name {
     font-family: "Uni Sans CAPS";
     font-weight: bold;
 }
+
+header-item:hover {
+    font-size: 64px
+}
+
+header-item.logo-x:not(:hover) {
+    font-size: 100px;
+}
+
+header-item#logo-name:not(:hover) {
+    font-size: 0px;
+}
