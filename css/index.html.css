@@ -15,14 +15,14 @@ header-item#logo-name {
     font-weight: bold;
 }
 
-header-item:hover {
+header:hover>header-item {
     font-size: 64px
 }
 
-header-item.logo-x:not(:hover) {
+header:not(:hover)>header-item.logo-x {
     font-size: 100px;
 }
 
-header-item#logo-name:not(:hover) {
+header:not(:hover)>header-item#logo-name {
     font-size: 0px;
 }
