@@ -42,7 +42,7 @@ header:hover>header-item {
 }
 
 header:not(:hover)>header-item.logo-x {
-    font-size: 500px;
+    font-size: 50px;
 }
 
 header:not(:hover)>header-item#logo-name {
@@ -50,12 +50,12 @@ header:not(:hover)>header-item#logo-name {
 }
 
 header:hover>header-item#logo-name {
-    width: 320px;
+    width: 160px;
 }
 
 header {
     top: 0px;
-    height: 125px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
