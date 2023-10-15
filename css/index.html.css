@@ -17,9 +17,6 @@
   }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
 }
 
@@ -32,7 +29,7 @@ header-item.logo-x {
 header-item#logo-name {
     font-family: "Uni Sans CAPS";
     font-weight: bold;
-    font-size: 64px;
+    font-size: 32px;
     transition: width 0.5s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
     text-align: center;
     overflow: hidden;
@@ -41,11 +38,11 @@ header-item#logo-name {
 }
 
 header:hover>header-item {
-    font-size: 64px
+    font-size: 32px
 }
 
 header:not(:hover)>header-item.logo-x {
-    font-size: 100px;
+    font-size: 500px;
 }
 
 header:not(:hover)>header-item#logo-name {
@@ -57,6 +54,7 @@ header:hover>header-item#logo-name {
 }
 
 header {
+    top: 0px;
     height: 125px;
     display: flex;
     justify-content: center;
