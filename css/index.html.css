@@ -1,3 +1,21 @@
+:root {
+    --notquiteblack: #0F0F0F;
+    --notquitewhite: #F0F0F0;
+    --color-cfb: cornflowerblue;
+    --color-cnf: #404;
+    --color-blurple-light: #5865F2;
+    --color-blurple-dark: #454FBF;
+}
+
+@keyframes circle-in-center {
+    from {
+      clip-path: circle(0%);
+    }
+    to {
+      clip-path: circle(125%);
+    }
+  }
+
 body {
     display: flex;
     justify-content: center;
@@ -5,7 +23,7 @@ body {
 }
 
 header-item.logo-x {
-    padding: 0 10px;
+    padding: 0 5px;
     font-family: "Montserrat";
     font-weight: bold;
 }
@@ -42,9 +60,26 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-center;
 }
 
 header header-item {
     transition: font-size 0.5s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        background-color: #0F0F0F;
+        color: var(--notquitewhite);
+    }
+
+    header:not(:hover) {
+        background-color: #0F0F0F;
+        color: var(--notquitewhite);
+    }
+
+    header:hover {
+        background-color: var(--color-cnf);
+        color: var(--notquitewhite);
+    }
+}
