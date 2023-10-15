@@ -55,7 +55,7 @@ header:hover>header-item#logo-name {
 
 header {
     top: 0px;
-    height: 75px;
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
