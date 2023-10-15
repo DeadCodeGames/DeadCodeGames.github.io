@@ -26,3 +26,14 @@ header:not(:hover)>header-item.logo-x {
 header:not(:hover)>header-item#logo-name {
     font-size: 0px;
 }
+
+header {
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header header-item {
+    transition: font-size 0.75s ease-in-out 0s;
+}
