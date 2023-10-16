@@ -7,15 +7,6 @@
     --color-blurple-dark: #454FBF;
 }
 
-@keyframes circle-in-center {
-    from {
-      clip-path: circle(0%);
-    }
-    to {
-      clip-path: circle(125%);
-    }
-  }
-
 body {
     margin: 0;
 }
@@ -59,8 +50,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-center;
     width: 100%;
+    transition: background-color 0.5s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
 }
 
 header header-item {
