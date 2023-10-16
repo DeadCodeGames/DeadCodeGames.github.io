@@ -166,3 +166,7 @@ discordhandle {
 githubhandle {
     font-size: 8.25px
 }
+
+profile#botprofile {
+    height: 180px;
+}
