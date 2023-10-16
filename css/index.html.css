@@ -60,17 +60,34 @@ header header-item {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        background-color: #0F0F0F;
+        background-color: var(--notquiteblack);
         color: var(--notquitewhite);
     }
 
     header:not(:hover) {
-        background-color: #0F0F0F;
+        background-color: var(--notquiteblack);
         color: var(--notquitewhite);
     }
 
     header:hover {
         background-color: var(--color-cnf);
         color: var(--notquitewhite);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        background-color: var(--notquitewhite);
+        color: var(--notquiteblack);
+    }
+
+    header:not(:hover) {
+        background-color: var(--notquitewhite);
+        color: var(--notquiteblack);
+    }
+
+    header:hover {
+        background-color: var(--color-cfb);
+        color: var(--notquiteblack);
     }
 }
