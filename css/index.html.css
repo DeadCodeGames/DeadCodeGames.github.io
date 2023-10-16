@@ -122,13 +122,19 @@ profilessection {
 }
 
 profile {
-    width: 200px;
+    width: 170px;
     display: flex;
-    height: 300px;
+    height: 190px;
     background-color: #313338;
     border-radius: 15px;
     margin: 15px;
     transition: transform 0.25s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
+    padding: 30px 15px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
 }
 
 profile:hover {
@@ -140,4 +146,23 @@ hr {
     height: 0px;
     margin: 0;
     border: 0;
+}
+
+img.pfp {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+profilename {
+    font-size: 16px;
+}
+
+discordhandle {
+    font-size: 10px;
+}
+
+githubhandle {
+    font-size: 8.25px
 }
