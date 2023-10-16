@@ -91,3 +91,22 @@ header header-item {
         color: var(--notquiteblack);
     }
 }
+
+section {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+sectiontitle {
+    font-family: "Uni Sans CAPS";
+    font-weight: bold;
+    font-size: 64;
+}
+
+sectiontext {
+    font-family: "Uni Sans CAPS";
+    font-size: 16;
+}
