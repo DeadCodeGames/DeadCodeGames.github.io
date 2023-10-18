@@ -187,4 +187,5 @@ profile#botprofile profilename::after {
     border-radius: 3px;
     margin-left: 3px;
     align-self: center;
+    margin-top: -1px;
 }
