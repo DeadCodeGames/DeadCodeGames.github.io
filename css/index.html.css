@@ -67,6 +67,7 @@ header header-item {
     :root {
         background-color: var(--notquiteblack);
         color: var(--notquitewhite);
+        --bottagbg: var(--color-blurple-dark);
     }
 
     header:not(:hover) {
@@ -84,6 +85,7 @@ header header-item {
     :root {
         background-color: var(--notquitewhite);
         color: var(--notquiteblack);
+        --bottagbg: var(--color-blurple-light);
     }
 
     header:not(:hover) {
@@ -178,5 +180,8 @@ profile#botprofile {
 }
 
 profile#botprofile profilename::after {
-content: "BOT";
+    content: "BOT";
+    background-color: var(--bottagbg);
+    font-size: 12px;
+    padding: 2px;
 }
