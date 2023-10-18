@@ -176,3 +176,7 @@ githubhandle {
 profile#botprofile {
     height: 180px;
 }
+
+profile#botprofile profilename::after {
+content: "BOT";
+}
