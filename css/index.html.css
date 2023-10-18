@@ -183,6 +183,6 @@ profile#botprofile profilename::after {
     content: "BOT";
     background-color: var(--bottagbg);
     font-size: 12px;
-    padding: 2px 3px;
-    border-radius: 1px;
+    padding: 3px 2px;
+    border-radius: 3px;
 }
