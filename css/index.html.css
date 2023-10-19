@@ -190,3 +190,24 @@ profile#botprofile profilename::after {
     position: relative;
     top: -1.5px;
 }
+
+section#socials>socialcard {
+    width: 50%;
+    height: 100%;
+}
+
+section#socials {
+    padding: 0;
+    width: 100%;
+    height: 333px;
+    display: flex;
+    flex-direction: row;
+}
+
+socialcard#socialsgithub {
+    background: linear-gradient(270deg, #000 0%, var(--notquiteblack) 100%);
+}
+
+socialcard#socialsdiscord {
+    background: linear-gradient(90deg, var(--color-blurple-dark) 0%, var(--color-blurple-light) 100%);
+}
