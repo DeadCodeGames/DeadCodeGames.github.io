@@ -130,14 +130,14 @@ profilessection {
 }
 
 profile {
-    width: 170px;
+    width: 160px;
     display: flex;
-    height: 190px;
+    height: fit-content;
     background-color: #313338;
     border-radius: 15px;
     margin: 15px;
     transition: transform 0.25s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
-    padding: 30px 15px;
+    padding: 25px 15px;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -165,14 +165,6 @@ img.pfp {
 
 profilename {
     font-size: 16px;
-}
-
-discordhandle {
-    font-size: 10px;
-}
-
-githubhandle {
-    font-size: 8.25px
 }
 
 profile#botprofile {
