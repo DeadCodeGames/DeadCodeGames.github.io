@@ -5,6 +5,7 @@
     --color-cnf: #404;
     --color-blurple-light: #5865F2;
     --color-blurple-dark: #454FBF;
+    --discordgray: #313338;
 }
 
 body {
@@ -133,7 +134,7 @@ profile {
     width: 160px;
     display: flex;
     height: fit-content;
-    background-color: #313338;
+    background-color: var(--discordgray);
     border-radius: 15px;
     margin: 15px;
     transition: transform 0.25s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
