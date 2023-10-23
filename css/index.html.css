@@ -209,3 +209,25 @@ socialcard#socialsgithub {
 socialcard#socialsdiscord {
     background: linear-gradient(90deg, var(--color-blurple-dark) 0%, var(--color-blurple-light) 100%);
 }
+
+socialcard>img {
+    height: 50px;
+}
+
+div#githublogo {
+    height: 50px;
+    filter: invert(1) brightness(2);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+div#githublogo>img#gitoctocat {
+    height: 100%;
+    margin-right: 5px;
+}
+
+div#githublogo>img#gittextlogo {
+    height: 66.6%;
+    margin-left: 5px;
+}
