@@ -71,12 +71,12 @@ header header-item {
         --bottagbg: var(--color-blurple-dark);
     }
 
-    header:not(:hover) {
+    header:not(:hover), footer:not(:hover) {
         background-color: var(--notquiteblack);
         color: var(--notquitewhite);
     }
 
-    header:hover {
+    header:hover, footer:hover {
         background-color: var(--color-cnf);
         color: var(--notquitewhite);
     }
@@ -89,12 +89,12 @@ header header-item {
         --bottagbg: var(--color-blurple-light);
     }
 
-    header:not(:hover) {
+    header:not(:hover), footer:not(:hover) {
         background-color: var(--notquitewhite);
         color: var(--notquiteblack);
     }
 
-    header:hover {
+    header:hover, footer:hover {
         background-color: var(--color-cfb);
         color: var(--notquiteblack);
     }
