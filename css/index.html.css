@@ -231,3 +231,51 @@ div#githublogo>img#gittextlogo {
     height: 66.6%;
     margin-left: 5px;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    white-space: break-spaces;
+    text-transform: uppercase;
+}
+
+img#heartemoji {
+    height: 15px;
+    top: 1.5px;
+    position: relative;
+    animation: pulse 0.9375s linear 0s infinite normal;
+}
+
+section:last-of-type {
+    margin-bottom: 75px;
+}
+
+footer span:not(:last-of-type)::after {
+    content: " · "
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+    5% {
+        transform: scale(1.25)
+    }
+    25% {
+        transform: scale(1)
+    }
+    35% {
+        transform: scale(1.25)
+    }
+    60% {
+        transform: scale(1)
+    }
+}
