@@ -57,6 +57,9 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+header, footer {
     transition: background-color 0.5s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
 }
 
