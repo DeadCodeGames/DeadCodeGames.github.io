@@ -238,7 +238,7 @@ div#githublogo>img#gittextlogo {
 footer {
     position: fixed;
     bottom: 0;
-    height: 75px;
+    height: 50px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -258,7 +258,7 @@ img#heartemoji {
 }
 
 section:last-of-type {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 footer span:not(:last-of-type)::after {
