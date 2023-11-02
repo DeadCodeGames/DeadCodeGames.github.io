@@ -216,7 +216,8 @@ socialcard#socialsdiscord {
 }
 
 socialcard>img {
-    height: 50px;
+    height: 40px;
+    margin-bottom: 40px;
 }
 
 div#githublogo {
