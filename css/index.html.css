@@ -26,7 +26,7 @@ header-item.logo-x {
 }
 
 header-item#logo-name {
-    font-family: "Uni Sans CAPS";
+    font-family: "Uni Sans CAPS", "Corporate Logo ver2";
     font-weight: bold;
     font-size: 32px;
     transition: width 0.5s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
@@ -34,6 +34,7 @@ header-item#logo-name {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    text-wrap: nowrap;
 }
 
 header:hover>header-item {
@@ -48,8 +49,16 @@ header:not(:hover)>header-item#logo-name {
     width: 0px;
 }
 
-header:hover>header-item#logo-name {
+header:hover>header-item#logo-name:lang(fil), header:hover>header-item#logo-name:lang(en) {
     width: 160px;
+}
+
+header:hover>header-item#logo-name:lang(sk) {
+    width: 180px;
+}
+
+header:hover>header-item#logo-name:lang(ja) {
+    width: 100px;
 }
 
 header {
@@ -248,9 +257,13 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', "Noto Sans JP";
     white-space: break-spaces;
     text-transform: uppercase;
+}
+
+footer:lang(ja) {
+    font-weight: 700;
 }
 
 img#heartemoji {
@@ -284,4 +297,8 @@ footer span:not(:last-of-type)::after {
     60% {
         transform: scale(1)
     }
+}
+
+section#intro:lang(ja)>sectiontitle, section#intro:lang(ja)>sectiontext {
+    font-family: "Noto Sans JP";
 }
