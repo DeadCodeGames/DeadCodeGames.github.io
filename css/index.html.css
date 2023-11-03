@@ -298,3 +298,7 @@ footer span:not(:last-of-type)::after {
         transform: scale(1)
     }
 }
+
+section#intro:lang(ja)>sectiontitle, section#intro:lang(ja)>sectiontext {
+    font-family: "Noto Sans JP";
+}
