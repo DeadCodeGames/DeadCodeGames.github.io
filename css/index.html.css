@@ -268,7 +268,7 @@ footer:lang(ja) {
 
 img#heartemoji {
     height: 15px;
-    top: 1.5px;
+    top: 2px;
     position: relative;
     animation: pulse 0.9375s linear 0s infinite normal;
 }
