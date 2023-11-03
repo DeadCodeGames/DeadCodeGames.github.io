@@ -5,7 +5,9 @@
     --color-cnf: #404;
     --color-blurple-light: #5865F2;
     --color-blurple-dark: #454FBF;
-    --discordgray: #313338;
+    --discordlightgray: #313338;
+    --discorddarkgray: #2a2d31;
+    --discordtext: #b3bac1;
 }
 
 body {
@@ -57,6 +59,9 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+header, footer {
     transition: background-color 0.5s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
 }
 
@@ -71,12 +76,12 @@ header header-item {
         --bottagbg: var(--color-blurple-dark);
     }
 
-    header:not(:hover) {
+    header:not(:hover), footer:not(:hover) {
         background-color: var(--notquiteblack);
         color: var(--notquitewhite);
     }
 
-    header:hover {
+    header:hover, footer:hover {
         background-color: var(--color-cnf);
         color: var(--notquitewhite);
     }
@@ -89,12 +94,12 @@ header header-item {
         --bottagbg: var(--color-blurple-light);
     }
 
-    header:not(:hover) {
+    header:not(:hover), footer:not(:hover) {
         background-color: var(--notquitewhite);
         color: var(--notquiteblack);
     }
 
-    header:hover {
+    header:hover, footer:hover {
         background-color: var(--color-cfb);
         color: var(--notquiteblack);
     }
@@ -134,7 +139,7 @@ profile {
     width: 160px;
     display: flex;
     height: fit-content;
-    background-color: var(--discordgray);
+    background-color: var(--discordlightgray);
     border-radius: 15px;
     margin: 15px;
     transition: transform 0.25s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
@@ -211,7 +216,8 @@ socialcard#socialsdiscord {
 }
 
 socialcard>img {
-    height: 50px;
+    height: 40px;
+    margin-bottom: 40px;
 }
 
 div#githublogo {
@@ -230,4 +236,52 @@ div#githublogo>img#gitoctocat {
 div#githublogo>img#gittextlogo {
     height: 66.6%;
     margin-left: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    white-space: break-spaces;
+    text-transform: uppercase;
+}
+
+img#heartemoji {
+    height: 15px;
+    top: 1.5px;
+    position: relative;
+    animation: pulse 0.9375s linear 0s infinite normal;
+}
+
+section:last-of-type {
+    margin-bottom: 50px;
+}
+
+footer span:not(:last-of-type)::after {
+    content: " · "
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+    5% {
+        transform: scale(1.25)
+    }
+    25% {
+        transform: scale(1)
+    }
+    35% {
+        transform: scale(1.25)
+    }
+    60% {
+        transform: scale(1)
+    }
 }
