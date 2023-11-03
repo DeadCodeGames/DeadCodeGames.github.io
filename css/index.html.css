@@ -26,7 +26,7 @@ header-item.logo-x {
 }
 
 header-item#logo-name {
-    font-family: "Uni Sans CAPS";
+    font-family: "Uni Sans CAPS", "Corporate Logo ver2";
     font-weight: bold;
     font-size: 32px;
     transition: width 0.5s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
@@ -48,8 +48,16 @@ header:not(:hover)>header-item#logo-name {
     width: 0px;
 }
 
-header:hover>header-item#logo-name {
+header:hover>header-item#logo-name:lang(fil), header:hover>header-item#logo-name:lang(en) {
     width: 160px;
+}
+
+header:hover>header-item#logo-name:lang(sk) {
+    width: 180px;
+}
+
+header:hover>header-item#logo-name:lang(jp) {
+    width: 100px;
 }
 
 header {

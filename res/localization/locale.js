@@ -15,6 +15,7 @@ function loadLocalization() {
                         element.textContent = translations[string];
                     }
                 });
+                document.setAttribute("lang", languageCode);
             })
             .catch((error) => {
                 console.error('Error loading localization:', error);
