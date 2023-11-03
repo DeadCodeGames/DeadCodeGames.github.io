@@ -4,7 +4,7 @@ function loadLocalization() {
         const languageCode = language.split('-')[0];
 
         if (languageCode === 'en') {
-            break;
+            return;
         };
 
         fetch(`/res/localization/${languageCode}.json`).then((response) => response.json()).then((translations) => {
@@ -19,8 +19,8 @@ function loadLocalization() {
             .catch((error) => {
                 console.error('Error loading localization:', error);
             });
+        return;
     }
 }
 
-// Call the loadLocalization function when the document is ready
 document.addEventListener('DOMContentLoaded', loadLocalization);
