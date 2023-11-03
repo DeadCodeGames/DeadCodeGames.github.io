@@ -34,6 +34,7 @@ header-item#logo-name {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    text-wrap: nowrap;
 }
 
 header:hover>header-item {
