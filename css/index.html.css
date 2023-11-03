@@ -302,3 +302,7 @@ footer span:not(:last-of-type)::after {
 section#intro:lang(ja)>sectiontitle, section#intro:lang(ja)>sectiontext {
     font-family: "Noto Sans JP";
 }
+
+#footnote1:lang(ja) {
+    padding-right: 1.5px;
+}
