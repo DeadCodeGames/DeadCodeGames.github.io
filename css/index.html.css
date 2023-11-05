@@ -306,3 +306,35 @@ section#intro:lang(ja)>sectiontitle, section#intro:lang(ja)>sectiontext {
 #footnote1:lang(ja) {
     padding-right: 1.5px;
 }
+
+button#gitbutton {
+    background: var(--notquitewhite);
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: var(--notquiteblack);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Uni Sans CAPS';
+    font-weight: bold;
+    border-style: solid;
+    color: var(--notquiteblack);
+    border-width: 3;
+    transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
+}
+
+button#gitbutton:hover {
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: var(--notquitewhite);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Uni Sans CAPS';
+    font-weight: bold;
+    border-style: solid;
+    color: var(--notquitewhite);
+    border-width: 3px;
+    transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
+}
