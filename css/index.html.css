@@ -129,10 +129,10 @@ profilessection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color: var(--notquitewhite) !important;
+    align-content: space-between;
 }
 
 profile {
@@ -145,9 +145,7 @@ profile {
     transition: transform 0.25s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
     padding: 55px 45px;
     flex-direction: column;
-    align-content: center;
     align-items: center;
-    justify-content: center;
     font-family: "Montserrat";
 }
 
