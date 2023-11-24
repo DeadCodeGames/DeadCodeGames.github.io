@@ -139,7 +139,7 @@ profilessection {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color: var(--notquitewhite) !important;
 }
