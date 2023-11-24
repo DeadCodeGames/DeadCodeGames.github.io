@@ -26,7 +26,7 @@ header-item.logo-x {
 }
 
 header-item#logo-name {
-    font-family: "Uni Sans CAPS";
+    font-family: "Uni Sans CAPS", "Corporate Logo ver2";
     font-weight: bold;
     font-size: 32px;
     transition: width 0.5s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
@@ -34,6 +34,7 @@ header-item#logo-name {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    text-wrap: nowrap;
 }
 
 header:hover>header-item {
@@ -48,8 +49,16 @@ header:not(:hover)>header-item#logo-name {
     width: 0px;
 }
 
-header:hover>header-item#logo-name {
+header:hover>header-item#logo-name:lang(fil), header:hover>header-item#logo-name:lang(en) {
     width: 160px;
+}
+
+header:hover>header-item#logo-name:lang(sk) {
+    width: 180px;
+}
+
+header:hover>header-item#logo-name:lang(ja) {
+    width: 100px;
 }
 
 header {
@@ -129,10 +138,10 @@ profilessection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: space-between;
     justify-content: center;
     align-items: center;
     color: var(--notquitewhite) !important;
-    align-content: space-between;
 }
 
 profile {
@@ -145,7 +154,9 @@ profile {
     transition: transform 0.25s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
     padding: 55px 45px;
     flex-direction: column;
+    align-content: center;
     align-items: center;
+    justify-content: center;
     font-family: "Montserrat";
 }
 
@@ -193,7 +204,7 @@ section#socials>socialcard {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -215,7 +226,6 @@ socialcard#socialsdiscord {
 
 socialcard>img {
     height: 40px;
-    margin-bottom: 40px;
 }
 
 div#githublogo {
@@ -246,14 +256,18 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', "Noto Sans JP";
     white-space: break-spaces;
     text-transform: uppercase;
 }
 
+footer:lang(ja) {
+    font-weight: 700;
+}
+
 img#heartemoji {
     height: 15px;
-    top: 1.5px;
+    top: 2px;
     position: relative;
     animation: pulse 0.9375s linear 0s infinite normal;
 }
@@ -282,4 +296,45 @@ footer span:not(:last-of-type)::after {
     60% {
         transform: scale(1)
     }
+}
+
+section#intro:lang(ja)>sectiontitle, section#intro:lang(ja)>sectiontext {
+    font-family: "Noto Sans JP";
+}
+
+#footnote1:lang(ja) {
+    padding-right: 1.5px;
+}
+
+button#gitbutton {
+    background: var(--notquitewhite);
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    border-color: var(--notquiteblack);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Uni Sans CAPS';
+    font-weight: bold;
+    border-style: solid;
+    color: var(--notquiteblack);
+    border-width: 3;
+    transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
+    font-size: 32px;
+}
+
+button#gitbutton:hover {
+    background: transparent;
+    width: 300px;
+    height: 100px;
+    border-radius: 15px;
+    border-color: var(--notquitewhite);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Uni Sans CAPS';
+    font-weight: bold;
+    border-style: solid;
+    color: var(--notquitewhite);
+    border-width: 3px;
+    transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
 }
