@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    animation: titlebar-animation 30s ease-in-out infinite;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 64;
+}
+
+@keyframes titlebar-animation {
+    0% {
+      background: #0f0f0f;
+    }
+    25% {
+      background: #6495ed;
+    }
+    50% {
+      background: #404;
+    }
+    75% {
+      background: #6495ed;
+    }
+    100% {
+        background: #0f0f0f;
+    }
+  }
+
+@keyframes eye1 {
+    0% {
+      content: "×";
+    }
+    75% {
+      content: ">";
+    }
+    77% {
+      content: "×";
+    }
+    85% {
+      content: ">";
+    }
+    87% {
+      content: "×"
+    }
+    100% {
+        content: "×";
+    }
+  }
+@keyframes eye2 {
+    0% {
+      content: "×";
+    }
+    75% {
+      content: "<";
+    }
+    77% {
+      content: "×";
+    }
+    85% {
+      content: "<";
+    }
+    87% {
+      content: "×"
+    }
+    100% {
+        content: "×";
+    }
+  }
+
+span1, span2 {
+    font-family: "Montserrat";
+    font-weight: "bold";
+}
+
+span {
+    font-family: "Uni Sans CAPS";
+    font-weight: "bold";
+}
+
+span1::after {
+    animation: eye1 3s linear infinite;
+    content: ""
+}
+
+span2::after {
+    animation: eye2 3s linear infinite;
+    content: ""
+}
