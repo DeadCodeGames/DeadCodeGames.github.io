@@ -37,6 +37,7 @@ header-item#logo-name {
     display: flex;
     justify-content: center;
     text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 header:hover>header-item {
