@@ -593,13 +593,6 @@ dialog#weixmodal {
     }
 }
 
-pfpwrapper:hover>modalpreview {
-    color: #ffffffff;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #000000a0;
-    overflow: hidden;
-}
 dialog#tomoproskmodal {
     margin: 0;flex-direction: row;align-items: center;justify-content: center;
     animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
