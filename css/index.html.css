@@ -1,3 +1,5 @@
+@import url(/css/modals.css);
+
 :root {
     --notquiteblack: #0F0F0F;
     --notquitewhite: #F0F0F0;
@@ -144,26 +146,6 @@ profilessection {
     color: var(--notquitewhite) !important;
 }
 
-profile {
-    width: 160px;
-    display: flex;
-    height: fit-content;
-    background-color: var(--discordlightgray);
-    border-radius: 15px;
-    margin: 15px;
-    transition: transform 0.25s cubic-bezier(0.65, 0.05, 0.4, 1) 0s;
-    padding: 55px 45px;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat";
-}
-
-profile:hover {
-    transform: scale(1.125);
-}
-
 hr {
     width: 100%;
     height: 0px;
@@ -171,32 +153,6 @@ hr {
     border: 0;
 }
 
-img.pfp {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    margin-bottom: 15px;
-}
-
-profilename {
-    font-size: 16px;
-}
-
-profile#botprofile {
-    height: 180px;
-}
-
-profile#botprofile profilename::after {
-    content: "BOT";
-    background-color: var(--bottagbg);
-    font-size: 12px;
-    padding: 2px 3px;
-    border-radius: 3px;
-    margin-left: 3px;
-    align-self: center;
-    position: relative;
-    top: -1.5px;
-}
 
 section#socials>socialcard {
     width: 50%;
