@@ -30,8 +30,8 @@
     --Tester: #9680ff;
 }
 pfpwrapper {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: flex;
     background: var(--discorddarkgray);
     border-radius: 100%;
@@ -48,15 +48,15 @@ pfpwrapper {
     webkit-user-select: none;
 }
 pfpwrapper>img {
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     background: var(--discorddarkgray);
 }
 pfpwrapper>modalpreview {
     color: #ffffff00;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 16px;
     background: #00000000;
     overflow: hidden;
     display: flex;
@@ -72,7 +72,7 @@ pfpwrapper>modalpreview {
 pfpwrapper:hover>modalpreview {
     color: #ffffffff;
     font-family: Montserrat;
-    font-size: 12px;
+    font-size: 16px;
     background: #000000a0;
     overflow: hidden;
 }
@@ -207,35 +207,7 @@ dialog#kanshenmodal {
     margin-bottom: 10px;
 }
 }
-pfpwrapper>img {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    background: var(--discorddarkgray);
-}
-pfpwrapper>modalpreview {
-    color: #ffffff00;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #00000000;
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
-    width: 100px;
-    height: 100px;
-}
-pfpwrapper:hover>modalpreview {
-    color: #ffffffff;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #000000a0;
-    overflow: hidden;
-}
+
 dialog#zem0modal {
     margin: 0;flex-direction: row;align-items: center;justify-content: center;
     animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
@@ -364,35 +336,7 @@ dialog#zem0modal {
         margin-bottom: 10px;
     };
 }
-pfpwrapper>img {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    background: var(--discorddarkgray);
-}
-pfpwrapper>modalpreview {
-    color: #ffffff00;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #00000000;
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
-    width: 100px;
-    height: 100px;
-}
-pfpwrapper:hover>modalpreview {
-    color: #ffffffff;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #000000a0;
-    overflow: hidden;
-}
+
 dialog#slovaktasticmodal {
     margin: 0;flex-direction: row;align-items: center;justify-content: center;
     animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
@@ -521,35 +465,7 @@ dialog#slovaktasticmodal {
         margin-bottom: 10px;
     }
 }
-pfpwrapper>img {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    background: var(--discorddarkgray);
-}
-pfpwrapper>modalpreview {
-    color: #ffffff00;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #00000000;
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
-    width: 100px;
-    height: 100px;
-}
-pfpwrapper:hover>modalpreview {
-    color: #ffffffff;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #000000a0;
-    overflow: hidden;
-}
+
 dialog#weixmodal {
     margin: 0;flex-direction: row;align-items: center;justify-content: center;
     animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
@@ -678,28 +594,7 @@ dialog#weixmodal {
         margin-bottom: 10px;
     }
 }
-pfpwrapper>img {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    background: var(--discorddarkgray);
-}
-pfpwrapper>modalpreview {
-    color: #ffffff00;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #00000000;
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
-    width: 100px;
-    height: 100px;
-}
+
 pfpwrapper:hover>modalpreview {
     color: #ffffffff;
     font-family: Montserrat;
@@ -835,35 +730,7 @@ dialog#tomoproskmodal {
         margin-bottom: 10px;
     }
 }
-pfpwrapper>img {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    background: var(--discorddarkgray);
-}
-pfpwrapper>modalpreview {
-    color: #ffffff00;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #00000000;
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
-    width: 100px;
-    height: 100px;
-}
-pfpwrapper:hover>modalpreview {
-    color: #ffffffff;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #000000a0;
-    overflow: hidden;
-}
+
 dialog#hoštymodal {
     margin: 0;flex-direction: row;align-items: center;justify-content: center;
     animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
@@ -988,35 +855,7 @@ dialog#hoštymodal {
         margin-bottom: 10px;
     }
 }
-pfpwrapper>img {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    background: var(--discorddarkgray);
-}
-pfpwrapper>modalpreview {
-    color: #ffffff00;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #00000000;
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
-    width: 100px;
-    height: 100px;
-}
-pfpwrapper:hover>modalpreview {
-    color: #ffffffff;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #000000a0;
-    overflow: hidden;
-}
+
 dialog#oleksmodal {
     margin: 0;flex-direction: row;align-items: center;justify-content: center;
     animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
@@ -1147,35 +986,7 @@ dialog#oleksmodal {
         margin-bottom: 10px;
     }
 }
-pfpwrapper>img {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    background: var(--discorddarkgray);
-}
-pfpwrapper>modalpreview {
-    color: #ffffff00;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #00000000;
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
-    width: 100px;
-    height: 100px;
-}
-pfpwrapper:hover>modalpreview {
-    color: #ffffffff;
-    font-family: Montserrat;
-    font-size: 12px;
-    background: #000000a0;
-    overflow: hidden;
-}
+
 dialog#timmodal {
     margin: 0;flex-direction: row;align-items: center;justify-content: center;
     animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
