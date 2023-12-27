@@ -1106,7 +1106,7 @@ dialog#timmodal {
         margin-bottom: 10px;
     }
 }
-dialog[open]{display: flex;position: fixed;top: calc(50% - 175px);left: calc(50% - 225px);padding: 0;border: 0;background: none;transform: scale(1.25);}
+dialog[open]{display: flex;position: fixed;top: calc(50% - 175px);left: calc(50% - 225px);padding: 0;border: 0;background: none;transform: scale(1.25);overflow: visible;}
 dialog::backdrop {
     background: #000000AA;
     animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 alternate forwards;
