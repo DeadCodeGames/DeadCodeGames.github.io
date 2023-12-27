@@ -46,6 +46,7 @@ pfpwrapper {
     webkit-user-drag: none;
     webkit-user-modify: none;
     webkit-user-select: none;
+    margin: 0 10px;
 }
 pfpwrapper>img {
     width: 130px;
