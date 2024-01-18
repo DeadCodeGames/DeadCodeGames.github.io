@@ -61,7 +61,7 @@ pfpwrapper>modalpreview {
     background: #00000000;
     overflow: hidden;
     display: flex;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
