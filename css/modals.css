@@ -29,6 +29,9 @@
     --GraphicsDesigner: #e70052;
     --Tester: #9680ff;
 }
+profilessection>pfpwrapper {
+    margin: 0 10px;
+}
 pfpwrapper {
     width: 150px;
     height: 150px;
