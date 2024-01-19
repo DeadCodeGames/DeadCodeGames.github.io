@@ -61,7 +61,7 @@ pfpwrapper>modalpreview {
     background: #00000000;
     overflow: hidden;
     display: flex;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -171,7 +171,7 @@ dialog#kanshenmodal {
 }
 & profiledetails {
     color: var(--notquitewhite);
-    font-family: monospace;
+    font-family: consolas, monospace, ui-monospace;
 }
 & right>mainname {
     font-size: 32px;
@@ -304,7 +304,7 @@ dialog#zem0modal {
     }
     & profiledetails {
         color: var(--notquitewhite);
-        font-family: monospace;
+        font-family: consolas, monospace, ui-monospace;
     }
     & right>mainname {
         font-size: 32px;
@@ -433,7 +433,7 @@ dialog#slovaktasticmodal {
     }
     & profiledetails {
         color: var(--notquitewhite);
-        font-family: monospace;
+        font-family: consolas, monospace, ui-monospace;
     }
     & right>mainname {
         font-size: 32px;
@@ -562,7 +562,7 @@ dialog#weixmodal {
     }
     & profiledetails {
         color: var(--notquitewhite);
-        font-family: monospace;
+        font-family: consolas, monospace, ui-monospace;
     }
     & right>mainname {
         font-size: 32px;
@@ -691,7 +691,7 @@ dialog#tomoproskmodal {
     }
     & profiledetails {
         color: var(--notquitewhite);
-        font-family: monospace;
+        font-family: consolas, monospace, ui-monospace;
     }
     & right>mainname {
         font-size: 32px;
@@ -816,7 +816,7 @@ dialog#hoštymodal {
     }
     & profiledetails {
         color: var(--notquitewhite);
-        font-family: monospace;
+        font-family: consolas, monospace, ui-monospace;
     }
     & right>mainname {
         font-size: 32px;
@@ -947,7 +947,7 @@ dialog#oleksmodal {
     }
     & profiledetails {
         color: var(--notquitewhite);
-        font-family: monospace;
+        font-family: consolas, monospace, ui-monospace;
     }
     & right>mainname {
         font-size: 32px;
@@ -1076,7 +1076,7 @@ dialog#timmodal {
     }
     & profiledetails {
         color: var(--notquitewhite);
-        font-family: monospace;
+        font-family: consolas, monospace, ui-monospace;
     }
     & right>mainname {
         font-size: 32px;
