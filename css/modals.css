@@ -203,6 +203,14 @@ dialog#kanshenmodal {
 }
 & badge[badge="WD"] {background: var(--WebDeveloper);}
 & badge[badge="PM"] {background: var(--ProjectManager);}
+& badge[badge="LD"] {color: var(--LeadDeveloper);}
+& badge[badge="DEV"] {color: var(--Developer);}
+& badge[badge="JD"] {color: var(--JuniorDeveloper);}
+& badge[badge="WR"] {color: var(--Writer);}
+& badge[badge="JWR"] {color: var(--JuniorWriter);}
+& badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+& badge[badge="GD"] {color: var(--GraphicsDesigner);}
+& badge[badge="TST"] {color: var(--Tester);}
 & badge:not(:hover)>full {display: none;}
 & badge:hover>preview {display: none;}
 & email {
@@ -332,6 +340,14 @@ dialog#zem0modal {
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
     & badge:not(:hover)>full {display: none;}
     & badge:hover>preview {display: none;}
     & email {
@@ -461,6 +477,14 @@ dialog#slovaktasticmodal {
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
     & badge:not(:hover)>full {display: none;}
     & badge:hover>preview {display: none;}
     & email {
@@ -590,6 +614,14 @@ dialog#weixmodal {
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
     & badge:not(:hover)>full {display: none;}
     & badge:hover>preview {display: none;}
     & email {
@@ -719,6 +751,14 @@ dialog#tomoproskmodal {
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
     & badge:not(:hover)>full {display: none;}
     & badge:hover>preview {display: none;}
     & email {
@@ -844,6 +884,14 @@ dialog#hoštymodal {
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
     & badge:not(:hover)>full {display: none;}
     & badge:hover>preview {display: none;}
     & email {
@@ -973,6 +1021,14 @@ dialog#oleksmodal {
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
     & badge:not(:hover)>full {display: none;}
     & badge:hover>preview {display: none;}
     & email {
@@ -1102,6 +1158,14 @@ dialog#timmodal {
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
     & badge:not(:hover)>full {display: none;}
     & badge:hover>preview {display: none;}
     & email {
