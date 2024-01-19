@@ -872,7 +872,7 @@ dialog#oleksmodal {
         position: relative;
         top: -50px;
         left: 25px;
-        background: url(https://richard.kanshen.click/images/june/g.png);
+        background: linear-gradient(90deg, #078D70, #3D1A78);
         border-radius: 100%;
         background-size: 450px 150px;
         background-position-x: -20px;
