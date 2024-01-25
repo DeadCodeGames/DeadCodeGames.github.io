@@ -1,89 +1,84 @@
+one {
+  font-family: 'Uni Sans CAPS';
+  & articlename {
+      font-weight: bold;
+      font-size: 64;
+  }
+}
+
+articletype {
+  font-weight: normal;
+  font-size: 32;
+  font-style: italic;
+}
+
 body {
-    margin: 0;
-    animation: titlebar-animation 30s ease-in-out infinite;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 64;
+  margin: 0;
+  animation: color-animation 30s ease-in-out infinite;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 64;
 }
 
-@keyframes titlebar-animation {
-    0% {
+@keyframes color-animation {
+  0% {
+    background: #0f0f0f;
+  }
+  25% {
+    background: #6495ed;
+  }
+  50% {
+    background: #404;
+  }
+  75% {
+    background: #6495ed;
+  }
+  100% {
       background: #0f0f0f;
-    }
-    25% {
-      background: #6495ed;
-    }
-    50% {
-      background: #404;
-    }
-    75% {
-      background: #6495ed;
-    }
-    100% {
-        background: #0f0f0f;
-    }
   }
-
-@keyframes eye1 {
-    0% {
-      content: "×";
-    }
-    75% {
-      content: ">";
-    }
-    77% {
-      content: "×";
-    }
-    85% {
-      content: ">";
-    }
-    87% {
-      content: "×"
-    }
-    100% {
-        content: "×";
-    }
-  }
-@keyframes eye2 {
-    0% {
-      content: "×";
-    }
-    75% {
-      content: "<";
-    }
-    77% {
-      content: "×";
-    }
-    85% {
-      content: "<";
-    }
-    87% {
-      content: "×"
-    }
-    100% {
-        content: "×";
-    }
-  }
-
-span1, span2 {
-    font-family: "Montserrat";
-    font-weight: "bold";
 }
 
-span {
-    font-family: "Uni Sans CAPS";
-    font-weight: "bold";
+logo {
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 37.5px;
 }
 
-span1::after {
-    animation: eye1 3s linear infinite;
-    content: ""
+html {
+  padding: 20px 40px;
 }
 
-span2::after {
-    animation: eye2 3s linear infinite;
-    content: ""
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+pronunciation {
+  font-family: "Times New Roman", "Arial", "Courier New", "Segoe UI";
+  font-size: 24px;
+}
+
+hr {
+    width: 100%;
+    margin: 15px 0 25px;
+}
+
+span, li, li::marker {
+  font-size: 24px;
+}
+
+ol {
+  margin: 10px 0px 25px;
+}
+
+ol:nth-of-type(2) {
+  font-weight: bold;
 }
