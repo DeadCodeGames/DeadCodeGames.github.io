@@ -1,12 +1,16 @@
 <html lang="en">
     <head>
-        <title>× deadcode ×</title>
+        <title string="wwwtitle">× deadcode ×</title>
         <link rel="icon" type="image/x-icon" href="/images/logos/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- - CSS - -->
         <link rel="stylesheet" href="/css/index.html.css" />
         <link rel="stylesheet" href="/fonts/Uni Sans/stylesheet.css" />
         <link rel="stylesheet" href="/fonts/Montserrat/stylesheet.css" />
+        <link rel="stylesheet" href="https://richard.kanshen.click/fonts/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <!-- - Placeholder Images - -->
         <link rel="preload" as="image" href="/images/placeholders/discord-placeholder-0-000000-bot.png" />
         <link rel="preload" as="image" href="/images/placeholders/discord-placeholder-1-440044-thegayone.png" />
@@ -24,70 +28,303 @@
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-    
           gtag('config', 'G-HYFP6LV9FT');
         </script>
         <!-- - Discord Invite - -->
         <script src="/res/discordinvite/discordInvite.js"></script>
-        <script>
-        discordInvite.init({
-        inviteCode: 'Pxqd52hcV2',
-        title: '××',
-        });
-        discordInvite.render();
-        </script>
+        <script>discordInvite.init({inviteCode: 'Pxqd52hcV2', title: '××'}); discordInvite.render();</script>
+        <script src="/res/localization/locale.js"></script>
         <link rel="stylesheet" href="/res/discordinvite/discordInvite.css"/>
     </head>
     <body>
         <header>
-            <header-item class="logo-x">×</header-item><header-item id="logo-name">deadcode</header-item><header-item class="logo-x">×</header-item>
+            <header-item class="logo-x">×</header-item><header-item id="logo-name" string="logoname">deadcode</header-item><header-item class="logo-x">×</header-item>
         </header>
         <section id="intro">
-            <sectiontitle>who are we?</sectiontitle>
-            <sectiontext>We are a small student developer group from Slovakia</sectiontext>
+            <sectiontitle string="introtitle">who are we?</sectiontitle>
+            <sectiontext string="introtext">We are a small student developer group from Slovakia</sectiontext>
             <profilessection>
-                <profile>
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-2-544b99-leaddeveloper.png" alt="zem0">
-                    <profilename>zem0</profilename>
-                </profile>
-                <profile>
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-1-440044-thegayone.png" alt="kanshen">
-                    <profilename>kanshen</profilename>
-                </profile>
-                <profile>
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-2-544b99-leaddeveloper.png" alt="slovaktastic">
-                    <profilename>slovaktastic</profilename>
-                </profile>
-                <hr>
-                <profile>
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-3-6495ed-developer.png" alt="weix">
-                    <profilename>weix</profilename>
-                </profile>
-                <profile>
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-3-6495ed-developer.png" alt="tomoprosk">
-                    <profilename>tomoprosk</profilename>
-                </profile>
-                <hr>
-                <profile>
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-4-5865f2-juniordeveloper.png" alt="hošty">
-                    <profilename>hošty</profilename>
-                </profile>  
-                <profile>
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-6-880044-webdeveloper.png" alt="olex">
-                    <profilename>olex</profilename>
-                </profile>
-                <hr>
-                <profile>
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-7-7100f0-writer.png" alt="tim">
-                    <profilename>tim</profilename>
-                </profile>
-                <hr>
-                <profile id="botprofile">
-                    <img class="pfp" draggable="false" src="/images/placeholders/discord-placeholder-0-000000-bot.png" alt="deadcodebot">
-                    <profilename>DeadCodeBot</profilename>
-                </profile>
+                <pfpwrapper onclick="document.querySelector('dialog#kanshenmodal').showModal()">
+                    <img src="/images/pfp/pfp.kanshen.png">
+                    <modalpreview>kanshen</modalpreview>
+                    <dialog id="kanshenmodal">
+                        <span id="escape">Press ESC to Close</span>
+                        
+                        <modal>
+                            <banner></banner>
+                            <pfpwrapper><img src="/images/pfp/pfp.kanshen.png"></pfpwrapper>
+                            <profiledetails>
+                                <left>
+                                    <span><img src="/images/icons/icon.web.png"><a href="/redirect?id=a2Fuc2hlbmNsaWNr" target="_blank">kanshen.click</a></span>
+                                    <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=a2Fuc2hlbmdpdGh1Yg" target="_blank">@RichardKanshen</a></span>
+                                    <span><img src="/images/icons/icon.instagram.png"><a href="/redirect?id=a2Fuc2hlbmluc3RhZ3JhbQ" target="_blank">@richard._.kanshen</a></span>
+                                    <span id="threadslink"><img src="/images/icons/icon.threads.png"><a href="/redirect?id=a2Fuc2hlbnRocmVhZHM" target="_blank">@richard._.kanshen</a></span>
+                                </left>
+                                <right>
+                                    <mainname>kanshen</mainname>
+                                    <subtext>
+                                        <subname>richard</subname>
+                                        <pronouns><a href="/redirect?id=a2Fuc2hlbnByb25vdW5z" target="_blank">he/〇/him</a></pronouns>
+                                    </subtext>
+                                    <email>
+                                        <img src="/images/icons/icon.mail.png">
+                                        <a href="mailto:kanshen@mail.deadcode.is-a.dev" target="_blank">kanshen@mail.deadcode.is-a.dev</a>
+                                    </email>
+                                    <overallbadges>
+                                        <badge badge="PM"><preview>PM</preview><full>Project Manager</full></badge>
+                                        <badge badge="WD"><preview>WD</preview><full>Web Developer</full></badge>
+                                    </overallbadges>
+                                </right>
+                            </profiledetails>
+                        </modal>
+                    
+                    </dialog>
+                </pfpwrapper>
+
+                <pfpwrapper onclick="document.querySelector('dialog#zem0modal').showModal()">
+                    <img src="/images/pfp/pfp.zemo.png">
+                    <modalpreview>zem0</modalpreview>
+                    <dialog id="zem0modal">
+                        <span id="escape">Press ESC to Close</span>
+                        
+                        <modal>
+                            <banner></banner>
+                            <pfpwrapper><img src="/images/pfp/pfp.zemo.png"></pfpwrapper>
+                            <profiledetails>
+                                <left>
+                                    <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=emVtMGdpdGh1Yg" target="_blank">@Zemk0</a></span>
+                                    <span><img src="/images/icons/icon.discord.png"><a href="/redirect?id=emVtMGRpc2NvcmQ" target="_blank">@zemo6955</a></span>
+                                    <span id="twitchlink"><img src="/images/icons/icon.twitch.png"><a href="/redirect?id=emVtMHR3aXRjaA" target="_blank">@gaming_with_zemo</a></span>
+                                    <span><img src="/images/icons/icon.instagram.png"><a href="/redirect?id=emVtb2luc3RhZ3JhbQ" target="_blank">@z3m1nski</a></span>
+                                </left>
+                                <right>
+                                    <mainname>zem0</mainname>
+                                    <subtext>
+                                        <subname>dominik</subname>
+                                        <pronouns>he/him</pronouns>
+                                    </subtext>
+                                    <email>
+                                        <img src="/images/icons/icon.mail.png">
+                                        <a href="mailto:zem0@mail.deadcode.is-a.dev" target="_blank">zem0@mail.deadcode.is-a.dev</a>
+                                    </email>
+                                        <overallbadges></overallbadges>
+                                </right>
+                            </profiledetails>
+                        </modal>
+                    </dialog>
+                </pfpwrapper>
+
+                <pfpwrapper onclick="document.querySelector('dialog#slovaktasticmodal').showModal()">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+                    <modalpreview>slovaktastic</modalpreview>
+                    <dialog id="slovaktasticmodal">
+                        <span id="escape">Press ESC to Close</span>
+                    
+                        <modal>
+                            <banner></banner>
+                            <pfpwrapper><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="></pfpwrapper>
+                            <profiledetails>
+                                <left>
+                                    <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=c2xvdmFrdGFzdGljZ2l0aHVi" target="_blank">@SlovakTastic</a></span>
+                                    <span><img src="/images/icons/icon.youtube.png"><a href="/redirect?id=c2xvdmFrdGFzdGljeW91dHViZQ" target="_blank">@slovaktastic</a></span>
+                                    <span><img src="/images/icons/icon.twitter.png"><a href="/redirect?id=c2xvdmFrdGFzdGljdHdpdHRlcg" target="_blank">@slovaktastic</a></span>
+                                </left>
+                                <right>
+                                    <mainname>slovaktastic</mainname>
+                                    <subtext>
+                                        <subname>samo</subname>
+                                        <pronouns>he/him</pronouns>
+                                    </subtext>
+                                    <email>
+                                        <img src="/images/icons/icon.mail.png">
+                                        <a href="mailto:slovaktastic@mail.deadcode.is-a.dev" target="_blank">slovaktastic@mail.deadcode.is-a.dev</a>
+                                    </email>
+                                    <overallbadges></overallbadges>
+                                </right>
+                            </profiledetails>
+                        </modal>
+                    </dialog>
+                </pfpwrapper>
+
+                <pfpwrapper onclick="document.querySelector('dialog#weixmodal').showModal()">
+                    <img src="/images/pfp/pfp.weix.png">
+                <modalpreview>weix</modalpreview><dialog id="weixmodal">
+                <span id="escape">Press ESC to Close</span>
+                
+                <modal>
+                <banner></banner>
+                <pfpwrapper>
+                    <img src="/images/pfp/pfp.weix.png">
+                </pfpwrapper>
+                <profiledetails>
+                    <left>
+                        
+                        <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=d2VpeGdpdGh1Yg" target="_blank">@biberlik</a></span>
+                        
+                        
+                    <span><img src="/images/icons/icon.instagram.png"><a href="/redirect?id=d2VpeGluc3RhZ3JhbQ" target="_blank">@biberlik_._</a></span>
+                    <span id="tiktoklink"><img src="/images/icons/icon.tiktok.png"><a href="/redirect?id=d2VpeHRpa3Rvaw" target="_blank">@weixik</a></span></left>
+                    <right>
+                        <mainname>weix</mainname>
+                        <subtext>
+                            <subname>simon</subname>
+                            <pronouns>he/him</pronouns>
+                        </subtext>
+                        <email>
+                            <img src="/images/icons/icon.mail.png">
+                            <a href="mailto:weix@mail.deadcode.is-a.dev" target="_blank">weix@mail.deadcode.is-a.dev</a>
+                        </email>
+                        <overallbadges>
+                            
+                            
+                        </overallbadges>
+                    </right>
+                </profiledetails>
+                </modal></dialog></pfpwrapper>
+                
+                <pfpwrapper onclick="document.querySelector('dialog#tomoproskmodal').showModal()">
+                    <img src="/images/pfp/pfp.tomo.png">
+                <modalpreview>tomoprosk</modalpreview><dialog id="tomoproskmodal">
+                <span id="escape">Press ESC to Close</span>
+                
+                <modal>
+                <banner></banner>
+                <pfpwrapper>
+                    <img src="/images/pfp/pfp.tomo.png">
+                </pfpwrapper>
+                <profiledetails>
+                    <left>
+                        
+                        <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=dG9tb3Byb2dpdGh1Yg" target="_blank">@TomoProSk</a></span>
+                        
+                        
+                    <span><img src="/images/icons/icon.instagram.png"><a href="/redirect?id=dG9tb3Byb2luc3RhZ3JhbQ" target="_blank">@tom_mosko</a></span>
+                    <span id="tiktoklink"><img src="/images/icons/icon.tiktok.png"><a href="/redirect?id=dG9tb3Byb3Rpa3Rvaw" target="_blank">@TomoProSk</a></span></left>
+                    <right>
+                        <mainname>tomoprosk</mainname>
+                        <subtext>
+                            <subname>tomáš</subname>
+                            <pronouns>he/him</pronouns>
+                        </subtext>
+                        <email>
+                            <img src="/images/icons/icon.mail.png">
+                            <a href="mailto:tom@mail.deadcode.is-a.dev" target="_blank">tom@mail.deadcode.is-a.dev</a>
+                        </email>
+                        <overallbadges>
+                            
+                            
+                        </overallbadges>
+                    </right>
+                </profiledetails>
+                </modal></dialog></pfpwrapper>
+                
+                <pfpwrapper onclick="document.querySelector('dialog#hoštymodal').showModal()">
+                    <img src="/images/pfp/pfp.hošty.png">
+                <modalpreview>hošty</modalpreview><dialog id="hoštymodal">
+                <span id="escape">Press ESC to Close</span>
+                
+                <modal>
+                <banner></banner>
+                <pfpwrapper>
+                    <img src="/images/pfp/pfp.hošty.png">
+                </pfpwrapper>
+                <profiledetails>
+                    <left>
+                        <span><img src="/images/icons/icon.youtube.png"><a href="/redirect?id=aG_FoXR5eW91dHViZQ" target="_blank">@Hosty_</a></span>
+                        <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=aG_FoXR5Z2l0aHVi" target="_blank">@HostyIsDead</a></span>
+                        <span><img src="/images/icons/icon.instagram.png"><a href="/redirect?id=aG_FoXR5aW5zdGFncmFt" target="_blank">@hosty_deadcode</a></span>
+                        <span id="twitchlink"><img src="/images/icons/icon.twitch.png"><a href="/redirect?id=aG_FoXR5dHdpdGNo" target="_blank">@Hoosstyy</a></span>
+                    </left>
+                    <right>
+                        <mainname>hošty</mainname>
+                        <subtext>
+                            <subname>peter</subname>
+                            <pronouns>he/him</pronouns>
+                        </subtext>
+                        <email>
+                            <img src="/images/icons/icon.mail.png">
+                            <a href="mailto:hosty@mail.deadcode.is-a.dev" target="_blank">hosty@mail.deadcode.is-a.dev</a>
+                        </email>
+                        <overallbadges>
+                            
+                            <badge badge="WD"><preview>WD</preview><full>Web Developer</full></badge>
+                        </overallbadges>
+                    </right>
+                </profiledetails>
+                </modal></dialog></pfpwrapper>
+                
+                <pfpwrapper onclick="document.querySelector('dialog#oleksmodal').showModal()">
+                    <img src="/images/pfp/pfp.oleks.png">
+                <modalpreview>oleks</modalpreview><dialog id="oleksmodal">
+                <span id="escape">Press ESC to Close</span>
+                
+                <modal>
+                <banner></banner>
+                <pfpwrapper>
+                    <img src="/images/pfp/pfp.oleks.png">
+                </pfpwrapper>
+                <profiledetails>
+                    <left>
+                        
+                        <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=b2xla3NnaXRodWI" target="_blank">@Oleksandravailable</a></span>
+                        
+                        
+                    <span><img src="/images/icons/icon.instagram.png"><a href="/redirect?id=b2xla3NpbnN0YWdyYW0" target="_blank">@oleksandr.diachkov</a></span>
+                    <span><img src="/images/icons/icon.facebook.png"><a href="/redirect?id=b2xla3NmYWNlYm9vaw" target="_blank">@oleksandr.diachkov</a></span></left>
+                    <right>
+                        <mainname>oleks</mainname>
+                        <subtext>
+                            <subname>Olexander</subname>
+                            <pronouns>he/him</pronouns>
+                        </subtext>
+                        <email>
+                            <img src="/images/icons/icon.mail.png">
+                            <a href="mailto:oleks@mail.deadcode.is-a.dev" target="_blank">oleks@mail.deadcode.is-a.dev</a>
+                        </email>
+                        <overallbadges>
+                            
+                            
+                        </overallbadges>
+                    </right>
+                </profiledetails>
+                </modal></dialog></pfpwrapper>
+                
+                <pfpwrapper onclick="document.querySelector('dialog#timmodal').showModal()">
+                    <img src="/images/pfp/pfp.tim.png">
+                <modalpreview>tim</modalpreview><dialog id="timmodal">
+                <span id="escape">Press ESC to Close</span>
+                
+                <modal>
+                <banner></banner>
+                <pfpwrapper>
+                    <img src="/images/pfp/pfp.tim.png">
+                </pfpwrapper>
+                <profiledetails>
+                    <left>
+                        
+                        <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=dGltZ2l0aHVi" target="_blank">@SomeTim1003</a></span>
+                        
+                        
+                    </left>
+                    <right>
+                        <mainname>tim</mainname>
+                        <subtext>
+                            <subname>timotej</subname>
+                            <pronouns>he/him</pronouns>
+                        </subtext>
+                        <email>
+                            <img src="/images/icons/icon.mail.png">
+                            <a href="mailto:tim@mail.deadcode.is-a.dev" target="_blank">tim@mail.deadcode.is-a.dev</a>
+                        </email>
+                        <overallbadges>
+                            
+                            
+                        </overallbadges>
+                    </right>
+                </profiledetails>
+                </modal></dialog></pfpwrapper>
             </profilessection>
-                </section>
+        </section>
         <section id="socials">
             <socialcard id="socialsdiscord">
                 <img id="discordlogo" src="/images/logos/DiscordLogo.png">
@@ -98,10 +335,11 @@
                     <img id="gitoctocat" src="/images/logos/GitOctoCat.png">
                     <img id="gittextlogo" src="/images/logos/GitTextLogo.png">
                 </div>
+                <a href="/redirect?id=ZGVhZGNvZGVnaXRodWI" target="_blank"><button id="gitbutton">check us out</button></a>
             </socialcard>
         </section>
         <footer>
-            <span>Founded in 2023 with <img id="heartemoji" src="https://em-content.zobj.net/source/twitter/154/heavy-black-heart_2764.png" draggable="false"> in Slovakia</span><span>Made by the deadcode web dev team</span>
+            <span><text string="footnote1">Founded in 2023 with </text><img id="heartemoji" src="https://em-content.zobj.net/source/twitter/154/heavy-black-heart_2764.png" draggable="false"><text string="footnote2"> in Slovakia</text></span><span string="footercredit">Made by the deadcode web dev team</span>
         </footer>
     </body>
 </html>

@@ -1,0 +1,1181 @@
+@keyframes modal {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+:root {
+    --notquiteblack: #0F0F0F;
+    --notquitewhite: #F0F0F0;
+    --color-cfb: cornflowerblue;
+    --color-cnf: #404;
+    --color-blurple-light: #5865F2;
+    --color-blurple-dark: #454FBF;
+    --discordlightgray: #313338;
+    --discorddarkgray: #2a2d31;
+    --discordtext: #b3bac1;
+    --discorddarkhighlight: #111214;
+    --discordlighthighlight: #2e2f34;
+    --ProjectManager: var(--color-cnf);
+    --WebDeveloper: #804;
+    --LeadDeveloper: #544b99;
+    --Developer: var(--color-cfb);
+    --JuniorDeveloper: var(--color-blurple-light);
+    --Writer: #7100f0;
+    --WritingSupervisor: var(--Writer);
+    --LanguagesAdvisor: #a6a;
+    --GraphicsDesigner: #e70052;
+    --Tester: #9680ff;
+}
+profilessection>pfpwrapper {
+    margin: 0 10px;
+    z-index: 0;
+}
+pfpwrapper {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    background: var(--discorddarkgray);
+    border-radius: 100%;
+    background-size: 450px 150px;
+    background-position-x: -20px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+    user-select: none;
+    webkit-user-drag: none;
+    webkit-user-modify: none;
+    webkit-user-select: none;
+}
+pfpwrapper>img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background: var(--discorddarkgray);
+}
+pfpwrapper>modalpreview {
+    color: #ffffff00;
+    font-family: Montserrat;
+    font-size: 16px;
+    background: #00000000;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+    width: 150px;
+    height: 150px;
+}
+pfpwrapper:hover>modalpreview {
+    color: #ffffffff;
+    background: #000000a0;
+    overflow: hidden;
+}
+dialog#kanshenmodal {
+    margin: 0;flex-direction: row;align-items: center;justify-content: center;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+    & modal {
+    width: 450px;
+    height: 350px;
+    background: var(--discorddarkgray);
+    border: var(--discordlightgray) 5px solid;
+    border-radius: 15px;
+    overflow: hidden;
+}
+& banner {
+
+    width: 100%;
+        height: 100px;
+        display: block;
+        background: url(https://static.wikitide.net/lgbtqiawiki/0/0e/Rat_ace_flag.png);
+        background-size: 450px 100px;
+        background-repeat: no-repeat;
+}
+& pfpwrapper {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    position: relative;
+    top: -50px;
+    left: 25px;
+    background: url(https://static.wikitide.net/lgbtqiawiki/0/0e/Rat_ace_flag.png);
+    border-radius: 100%;
+    background-size: 450px 150px;
+    background-position-x: -20px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+& pfpwrapper>img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: var(--discorddarkgray);
+}
+& profiledetails {
+    width: calc(100% - 90px);
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    bottom: 125px;
+    left: 25px;
+    background: var(--discorddarkhighlight);
+    border-radius: 0px 15px 15px;
+    padding: 20px;
+}
+& left {
+    height: calc(100% - 70px);
+    width: 110px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+& left>span>img, right>email>img {
+    max-width: 15px;
+    filter: invert(1);
+    margin-right: 5px;
+    max-height: 15px;
+}
+& left>span {
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+}
+& a {
+    color: unset;
+    text-decoration: unset;
+}
+& left>span:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+& a:hover {
+    text-decoration: underline;
+}
+& left>span#threadslink>img {
+    margin-right: 7px;
+}
+& right {
+    text-align: right;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 210px;
+}
+& profiledetails {
+    color: var(--notquitewhite);
+    font-family: consolas, monospace, ui-monospace;
+}
+& right>mainname {
+    font-size: 32px;
+}
+& pronouns {
+    font-weight: 100;
+}
+& subtext>*:not(:last-child)::after {
+    content: " · ";
+}
+& badge:not(:last-child) {margin-right: 6px;}
+& subtext {
+    margin-bottom: 4px;
+}
+& badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    user-select: none;
+    webkit-user-drag: none;
+    webkit-user-modify: none;
+    webkit-user-select: none;
+}
+& badge[badge="WD"] {background: var(--WebDeveloper);}
+& badge[badge="PM"] {background: var(--ProjectManager);}
+& badge[badge="LD"] {color: var(--LeadDeveloper);}
+& badge[badge="DEV"] {color: var(--Developer);}
+& badge[badge="JD"] {color: var(--JuniorDeveloper);}
+& badge[badge="WR"] {color: var(--Writer);}
+& badge[badge="JWR"] {color: var(--JuniorWriter);}
+& badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+& badge[badge="GD"] {color: var(--GraphicsDesigner);}
+& badge[badge="TST"] {color: var(--Tester);}
+& badge:not(:hover)>full {display: none;}
+& badge:hover>preview {display: none;}
+& email {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 9px;
+    margin-bottom: 10px;
+}
+}
+
+dialog#zem0modal {
+    margin: 0;flex-direction: row;align-items: center;justify-content: center;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+    & modal {
+        width: 450px;
+        height: 350px;
+        background: var(--discorddarkgray);
+        border: var(--discordlightgray) 5px solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    & banner {
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(90deg, #6d2c06, #0c1018);
+    }
+    & pfpwrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        position: relative;
+        top: -50px;
+        left: 25px;
+        background: linear-gradient(90deg, #6d2c06, #0c1018);
+        border-radius: 100%;
+        background-size: 450px 150px;
+        background-position-x: -20px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    & pfpwrapper>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: var(--discorddarkgray);
+        border-style: none;
+    }
+    & profiledetails {
+        width: calc(100% - 90px);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125px;
+        left: 25px;
+        background: var(--discorddarkhighlight);
+        border-radius: 0px 15px 15px;
+        padding: 20px;
+    }
+    & left {
+        height: calc(100% - 70px);
+        width: 110px;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & left>span>img, right>email>img {
+        max-width: 15px;
+        filter: invert(1);
+        margin-right: 5px;
+        max-height: 15px;
+    }
+    & left>span {
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
+    }
+    & left>span:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & left>span#threadslink>img, left>span#twitchlink>img {
+        margin-right: 7px;
+    }
+    & right {
+        text-align: right;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 210px;
+    }
+    & profiledetails {
+        color: var(--notquitewhite);
+        font-family: consolas, monospace, ui-monospace;
+    }
+    & right>mainname {
+        font-size: 32px;
+    }
+    & pronouns {
+        font-weight: 100;
+    }
+    & subtext>*:not(:last-child)::after {
+        content: " · ";
+    }
+    & badge:not(:last-child) {margin-right: 6px;}
+    & subtext {
+        margin-bottom: 4px;
+    }
+    & badge {
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    & badge[badge="WD"] {background: var(--WebDeveloper);}
+    & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
+    & badge:not(:hover)>full {display: none;}
+    & badge:hover>preview {display: none;}
+    & email {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 10px;
+    };
+}
+
+dialog#slovaktasticmodal {
+    margin: 0;flex-direction: row;align-items: center;justify-content: center;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+    & modal {
+        width: 450px;
+        height: 350px;
+        background: var(--discorddarkgray);
+        border: var(--discordlightgray) 5px solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    & banner {
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(90deg, #FF0022, #ccbb22);
+    }
+    & pfpwrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        position: relative;
+        top: -50px;
+        left: 25px;
+        background: linear-gradient(90deg, #FF0022, #ccbb22);
+        border-radius: 100%;
+        background-size: 450px 150px;
+        background-position-x: -20px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+     & pfpwrapper>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: var(--discorddarkgray);
+        border-style: none;
+    }
+    & profiledetails {
+        width: calc(100% - 90px);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125px;
+        left: 25px;
+        background: var(--discorddarkhighlight);
+        border-radius: 0px 15px 15px;
+        padding: 20px;
+    }
+    & left {
+        height: calc(100% - 70px);
+        width: 110px;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & left>span>img, right>email>img {
+        max-width: 15px;
+        filter: invert(1);
+        margin-right: 5px;
+        max-height: 15px;
+    }
+    & left>span {
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
+    }
+    & left>span:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & left>span#threadslink>img, left>span#twitchlink>img {
+        margin-right: 7px;
+    }
+    & right {
+        text-align: right;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 210px;
+    }
+    & profiledetails {
+        color: var(--notquitewhite);
+        font-family: consolas, monospace, ui-monospace;
+    }
+    & right>mainname {
+        font-size: 32px;
+    }
+    & pronouns {
+        font-weight: 100;
+    }
+    & subtext>*:not(:last-child)::after {
+        content: " · ";
+    }
+    & badge:not(:last-child) {margin-right: 6px;}
+    & subtext {
+        margin-bottom: 4px;
+    }
+    & badge {
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    & badge[badge="WD"] {background: var(--WebDeveloper);}
+    & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
+    & badge:not(:hover)>full {display: none;}
+    & badge:hover>preview {display: none;}
+    & email {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+}
+
+dialog#weixmodal {
+    margin: 0;flex-direction: row;align-items: center;justify-content: center;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+    & modal {
+        width: 450px;
+        height: 350px;
+        background: var(--discorddarkgray);
+        border: var(--discordlightgray) 5px solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    & banner {
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(90deg, #34c0eb, #346beb);
+    }
+    & pfpwrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        position: relative;
+        top: -50px;
+        left: 25px;
+        background: linear-gradient(90deg, #34c0eb, #346beb);
+        border-radius: 100%;
+        background-size: 450px 150px;
+        background-position-x: -20px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    & pfpwrapper>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: var(--discorddarkgray);
+        border-style: none;
+    }
+    & profiledetails {
+        width: calc(100% - 90px);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125px;
+        left: 25px;
+        background: var(--discorddarkhighlight);
+        border-radius: 0px 15px 15px;
+        padding: 20px;
+    }
+    & left {
+        height: calc(100% - 70px);
+        width: 110px;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & left>span>img, right>email>img {
+        max-width: 15px;
+        filter: invert(1);
+        margin-right: 5px;
+        max-height: 15px;
+    }
+    & left>span {
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
+    }
+    & left>span:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & left>span#threadslink>img, left>span#twitchlink>img, left>span#tiktoklink>img {
+        margin-right: 7px;
+    }
+    & right {
+        text-align: right;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 210px;
+    }
+    & profiledetails {
+        color: var(--notquitewhite);
+        font-family: consolas, monospace, ui-monospace;
+    }
+    & right>mainname {
+        font-size: 32px;
+    }
+    & pronouns {
+        font-weight: 100;
+    }
+    & subtext>*:not(:last-child)::after {
+        content: " · ";
+    }
+    & badge:not(:last-child) {margin-right: 6px;}
+    subtext {
+        margin-bottom: 4px;
+    }
+    & badge {
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    & badge[badge="WD"] {background: var(--WebDeveloper);}
+    & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
+    & badge:not(:hover)>full {display: none;}
+    & badge:hover>preview {display: none;}
+    & email {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+}
+
+dialog#tomoproskmodal {
+    margin: 0;flex-direction: row;align-items: center;justify-content: center;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+    & modal {
+        width: 450px;
+        height: 350px;
+        background: var(--discorddarkgray);
+        border: var(--discordlightgray) 5px solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    & banner {
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(90deg, black,blue, purple);
+    }
+    & pfpwrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        position: relative;
+        top: -50px;
+        left: 25px;
+        background: linear-gradient(90deg, black,blue, purple);
+        border-radius: 100%;
+        background-size: 450px 150px;
+        background-position-x: -20px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    & pfpwrapper>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: var(--discorddarkgray);
+        border-style: none;
+    }
+    & profiledetails {
+        width: calc(100% - 90px);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125px;
+        left: 25px;
+        background: var(--discorddarkhighlight);
+        border-radius: 0px 15px 15px;
+        padding: 20px;
+    }
+    & left {
+        height: calc(100% - 70px);
+        width: 110px;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & left>span>img, right>email>img {
+        max-width: 15px;
+        filter: invert(1);
+        margin-right: 5px;
+        max-height: 15px;
+    }
+    & left>span {
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
+    }
+    & left>span:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & left>span#threadslink>img, left>span#twitchlink>img, left>span#tiktoklink>img {
+        margin-right: 7px;
+    }
+    & right {
+        text-align: right;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 210px;
+    }
+    & profiledetails {
+        color: var(--notquitewhite);
+        font-family: consolas, monospace, ui-monospace;
+    }
+    & right>mainname {
+        font-size: 32px;
+    }
+    & pronouns {
+        font-weight: 100;
+    }
+    & subtext>*:not(:last-child)::after {
+        content: " · ";
+    }
+    & badge:not(:last-child) {margin-right: 6px;}
+    & subtext {
+        margin-bottom: 4px;
+    }
+    & badge {
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    & badge[badge="WD"] {background: var(--WebDeveloper);}
+    & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
+    & badge:not(:hover)>full {display: none;}
+    & badge:hover>preview {display: none;}
+    & email {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+}
+
+dialog#hoštymodal {
+    margin: 0;flex-direction: row;align-items: center;justify-content: center;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+    & modal {
+        width: 450px;
+        height: 350px;
+        background: var(--discorddarkgray);
+        border: var(--discordlightgray) 5px solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    & banner {
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(90deg, #1e75ca, #351fad);
+    }
+    & pfpwrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        position: relative;
+        top: -50px;
+        left: 25px;
+        background: linear-gradient(90deg, #1e75ca, #351fad);
+        border-radius: 100%;
+        background-size: 450px 150px;
+        background-position-x: -20px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    & pfpwrapper>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: var(--discorddarkgray);
+    }
+    & profiledetails {
+        width: calc(100% - 90px);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125px;
+        left: 25px;
+        background: var(--discorddarkhighlight);
+        border-radius: 0px 15px 15px;
+        padding: 20px;
+    }
+    & left {
+        height: calc(100% - 70px);
+        width: 110px;
+        padding-top: 70px;
+    }
+    & left>span>img, right>email>img {
+        max-width: 15px;
+        filter: invert(1);
+        margin-right: 5px;
+        max-height: 15px;
+    }
+    & left>span {
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
+    }
+    & left>span:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & left>span#threadslink>img, left>span#twitchlink>img {
+        margin-right: 7px;
+    }
+    & right {
+        text-align: right;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 210px;
+    }
+    & profiledetails {
+        color: var(--notquitewhite);
+        font-family: consolas, monospace, ui-monospace;
+    }
+    & right>mainname {
+        font-size: 32px;
+    }
+    & pronouns {
+        font-weight: 100;
+    }
+    & subtext>*:not(:last-child)::after {
+        content: " · ";
+    }
+    & badge:not(:last-child) {margin-right: 6px;}
+    & subtext {
+        margin-bottom: 4px;
+    }
+    & badge {
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    & badge[badge="WD"] {background: var(--WebDeveloper);}
+    & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
+    & badge:not(:hover)>full {display: none;}
+    & badge:hover>preview {display: none;}
+    & email {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+}
+
+dialog#oleksmodal {
+    margin: 0;flex-direction: row;align-items: center;justify-content: center;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+    & modal {
+        width: 450px;
+        height: 350px;
+        background: var(--discorddarkgray);
+        border: var(--discordlightgray) 5px solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    & banner {
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(90deg, #078D70, #3D1A78);
+    }
+    & pfpwrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        position: relative;
+        top: -50px;
+        left: 25px;
+        background: linear-gradient(90deg, #078D70, #3D1A78);
+        border-radius: 100%;
+        background-size: 450px 150px;
+        background-position-x: -20px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    & pfpwrapper>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: var(--discorddarkgray);
+        border-style: none;
+    }
+    & profiledetails {
+        width: calc(100% - 90px);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125px;
+        left: 25px;
+        background: var(--discorddarkhighlight);
+        border-radius: 0px 15px 15px;
+        padding: 20px;
+    }
+    & left {
+        height: calc(100% - 70px);
+        width: 110px;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & left>span>img, right>email>img {
+        max-width: 15px;
+        filter: invert(1);
+        margin-right: 5px;
+        max-height: 15px;
+    }
+    & left>span {
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
+    }
+    & left>span:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & left>span#threadslink>img, left>span#twitchlink>img, left>span#tiktoklink>img {
+        margin-right: 7px;
+    }
+    & right {
+        text-align: right;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 210px;
+    }
+    & profiledetails {
+        color: var(--notquitewhite);
+        font-family: consolas, monospace, ui-monospace;
+    }
+    & right>mainname {
+        font-size: 32px;
+    }
+    & pronouns {
+        font-weight: 100;
+    }
+    & subtext>*:not(:last-child)::after {
+        content: " · ";
+    }
+    & badge:not(:last-child) {margin-right: 6px;}
+    & subtext {
+        margin-bottom: 4px;
+    }
+    & badge {
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    & badge[badge="WD"] {background: var(--WebDeveloper);}
+    & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
+    & badge:not(:hover)>full {display: none;}
+    & badge:hover>preview {display: none;}
+    & email {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+}
+
+dialog#timmodal {
+    margin: 0;flex-direction: row;align-items: center;justify-content: center;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 normal forwards;
+    & modal {
+        width: 450px;
+        height: 350px;
+        background: var(--discorddarkgray);
+        border: var(--discordlightgray) 5px solid;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    & banner {
+        width: 100%;
+        height: 100px;
+        display: block;
+        background: linear-gradient(90deg, #915b03,#d4620b);
+    }
+    & pfpwrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        position: relative;
+        top: -50px;
+        left: 25px;
+        background: linear-gradient(90deg, #915b03,#d4620b);
+        border-radius: 100%;
+        background-size: 450px 150px;
+        background-position-x: -20px;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    & pfpwrapper>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: var(--discorddarkgray);
+        border-style: none;
+    }
+    & profiledetails {
+        width: calc(100% - 90px);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125px;
+        left: 25px;
+        background: var(--discorddarkhighlight);
+        border-radius: 0px 15px 15px;
+        padding: 20px;
+    }
+    & left {
+        height: calc(100% - 70px);
+        width: 110px;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & left>span>img, right>email>img {
+        max-width: 15px;
+        filter: invert(1);
+        margin-right: 5px;
+        max-height: 15px;
+    }
+    & left>span {
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
+    }
+    & left>span:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & left>span#threadslink>img, left>span#twitchlink>img {
+        margin-right: 7px;
+    }
+    & right {
+        text-align: right;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 210px;
+    }
+    & profiledetails {
+        color: var(--notquitewhite);
+        font-family: consolas, monospace, ui-monospace;
+    }
+    & right>mainname {
+        font-size: 32px;
+    }
+    & pronouns {
+        font-weight: 100;
+    }
+    & subtext>*:not(:last-child)::after {
+        content: " · ";
+    }
+    & badge:not(:last-child) {margin-right: 6px;}
+    & subtext {
+        margin-bottom: 4px;
+    }
+    & badge {
+        padding: 4px 8px;
+        border-radius: 4px;
+    }
+    & badge[badge="WD"] {background: var(--WebDeveloper);}
+    & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
+    & badge:not(:hover)>full {display: none;}
+    & badge:hover>preview {display: none;}
+    & email {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+}
+dialog[open]{display: flex;position: fixed;top: calc(50% - 175px);left: calc(50% - 225px);padding: 0;border: 0;background: none;transform: scale(1.25);overflow: visible;}
+dialog::backdrop {
+    background: #000000AA;
+    animation: modal 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0s 1 alternate forwards;
+}
+span#escape {
+    font-family: 'Montserrat';
+    top: calc(50% - 215px);
+    position: fixed;
+    color: white;
+    letter-spacing: 2.5px;
+}
