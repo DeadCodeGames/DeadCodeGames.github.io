@@ -188,7 +188,7 @@ dialog#kanshenmodal {
 & subtext>*:not(:last-child)::after {
     content: " · ";
 }
-& badge:not(:last-child) {margin-right: 6px;}
+& badge:not(:last-child) {/* margin-right: 6px; */}
 & subtext {
     margin-bottom: 4px;
 }
@@ -200,6 +200,7 @@ dialog#kanshenmodal {
     webkit-user-modify: none;
     webkit-user-select: none;
     background-color: white;
+    font-size: 12px;
 }
 & badge[badge="WD"] {background: var(--WebDeveloper);}
 & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -226,8 +227,10 @@ dialog#kanshenmodal {
     align-items: flex-end;
     width: 100%;
     height: -webkit-fill-available;
-    margin-top: 25px;
+    margin-top: 4px;
     overflow-y: auto;
+    line-height: 24px;
+    font-size: 12px;
 }
 }
 
