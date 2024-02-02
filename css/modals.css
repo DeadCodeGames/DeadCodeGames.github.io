@@ -229,7 +229,7 @@ dialog#kanshenmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 4px;
+        ;
         overflow-y: auto;
     }
 }
@@ -383,7 +383,7 @@ dialog#zem0modal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 4px;
+        ;
         overflow-y: auto;
     }
 }
@@ -537,7 +537,7 @@ dialog#slovaktasticmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 4px;
+        ;
         overflow-y: auto;
     }
 }
@@ -691,7 +691,7 @@ dialog#weixmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 4px;
+        ;
         overflow-y: auto;
     }
 }
@@ -845,7 +845,7 @@ dialog#tomoproskmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 4px;
+        ;
         overflow-y: auto;
     }
 }
@@ -995,7 +995,7 @@ dialog#hoštymodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 4px;
+        ;
         overflow-y: auto;
     }
 }
@@ -1149,7 +1149,7 @@ dialog#oleksmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 4px;
+        ;
         overflow-y: auto;
     }
 }
@@ -1303,7 +1303,7 @@ dialog#timmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 4px;
+        ;
         overflow-y: auto;
     }
 }
@@ -1322,4 +1322,8 @@ span#escape {
 
 dialog gamebadges badge:not(:last-of-type) {
     margin-right: 5px;
+}
+
+dialog right:has(overallbadges) gamebadges {
+    margin-top: 4px;
 }
