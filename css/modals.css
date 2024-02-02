@@ -168,6 +168,7 @@ dialog#kanshenmodal {
 }
 & right {
     text-align: right;
+    height: 100%;
     font-weight: 900;
     display: flex;
     flex-direction: column;
@@ -198,6 +199,7 @@ dialog#kanshenmodal {
     webkit-user-drag: none;
     webkit-user-modify: none;
     webkit-user-select: none;
+    background-color: white;
 }
 & badge[badge="WD"] {background: var(--WebDeveloper);}
 & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -217,6 +219,15 @@ dialog#kanshenmodal {
     align-items: center;
     font-size: 9px;
     margin-bottom: 10px;
+}
+& gamebadges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: -webkit-fill-available;
+    margin-top: 25px;
+    overflow-y: auto;
 }
 }
 
@@ -334,6 +345,11 @@ dialog#zem0modal {
     & badge {
         padding: 4px 8px;
         border-radius: 4px;
+        user-select: none;
+        webkit-user-drag: none;
+        webkit-user-modify: none;
+        webkit-user-select: none;
+        background-color: white;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -354,6 +370,15 @@ dialog#zem0modal {
         font-size: 9px;
         margin-bottom: 10px;
     };
+    & gamebadges {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        margin-top: 25px;
+        overflow-y: auto;
+    }
 }
 
 dialog#slovaktasticmodal {
@@ -470,6 +495,11 @@ dialog#slovaktasticmodal {
     & badge {
         padding: 4px 8px;
         border-radius: 4px;
+        user-select: none;
+        webkit-user-drag: none;
+        webkit-user-modify: none;
+        webkit-user-select: none;
+        background-color: white;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -489,6 +519,15 @@ dialog#slovaktasticmodal {
         align-items: center;
         font-size: 9px;
         margin-bottom: 10px;
+    }
+    & gamebadges {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        margin-top: 25px;
+        overflow-y: auto;
     }
 }
 
@@ -606,6 +645,11 @@ dialog#weixmodal {
     & badge {
         padding: 4px 8px;
         border-radius: 4px;
+        user-select: none;
+        webkit-user-drag: none;
+        webkit-user-modify: none;
+        webkit-user-select: none;
+        background-color: white;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -625,6 +669,15 @@ dialog#weixmodal {
         align-items: center;
         font-size: 9px;
         margin-bottom: 10px;
+    }
+    & gamebadges {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        margin-top: 25px;
+        overflow-y: auto;
     }
 }
 
@@ -742,6 +795,11 @@ dialog#tomoproskmodal {
     & badge {
         padding: 4px 8px;
         border-radius: 4px;
+        user-select: none;
+        webkit-user-drag: none;
+        webkit-user-modify: none;
+        webkit-user-select: none;
+        background-color: white;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -761,6 +819,15 @@ dialog#tomoproskmodal {
         align-items: center;
         font-size: 9px;
         margin-bottom: 10px;
+    }
+    & gamebadges {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        margin-top: 25px;
+        overflow-y: auto;
     }
 }
 
@@ -874,6 +941,11 @@ dialog#hoštymodal {
     & badge {
         padding: 4px 8px;
         border-radius: 4px;
+        user-select: none;
+        webkit-user-drag: none;
+        webkit-user-modify: none;
+        webkit-user-select: none;
+        background-color: white;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -893,6 +965,15 @@ dialog#hoštymodal {
         align-items: center;
         font-size: 9px;
         margin-bottom: 10px;
+    }
+    & gamebadges {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        margin-top: 25px;
+        overflow-y: auto;
     }
 }
 
@@ -1010,6 +1091,11 @@ dialog#oleksmodal {
     & badge {
         padding: 4px 8px;
         border-radius: 4px;
+        user-select: none;
+        webkit-user-drag: none;
+        webkit-user-modify: none;
+        webkit-user-select: none;
+        background-color: white;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -1029,6 +1115,15 @@ dialog#oleksmodal {
         align-items: center;
         font-size: 9px;
         margin-bottom: 10px;
+    }
+    & gamebadges {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        margin-top: 25px;
+        overflow-y: auto;
     }
 }
 
@@ -1146,6 +1241,11 @@ dialog#timmodal {
     & badge {
         padding: 4px 8px;
         border-radius: 4px;
+        user-select: none;
+        webkit-user-drag: none;
+        webkit-user-modify: none;
+        webkit-user-select: none;
+        background-color: white;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -1165,6 +1265,15 @@ dialog#timmodal {
         align-items: center;
         font-size: 9px;
         margin-bottom: 10px;
+    }
+    & gamebadges {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        margin-top: 25px;
+        overflow-y: auto;
     }
 }
 dialog[open]{display: flex;position: fixed;top: calc(50% - 175px);left: calc(50% - 225px);padding: 0;border: 0;background: none;transform: scale(1.25);overflow: visible;}
