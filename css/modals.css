@@ -88,150 +88,150 @@ dialog#kanshenmodal {
     border: var(--discordlightgray) 5px solid;
     border-radius: 15px;
     overflow: hidden;
-}
-& banner {
+    }
+    & banner {
 
-    width: 100%;
-        height: 100px;
-        display: block;
+        width: 100%;
+            height: 100px;
+            display: block;
+            background: url(https://static.wikitide.net/lgbtqiawiki/0/0e/Rat_ace_flag.png);
+            background-size: 450px 100px;
+            background-repeat: no-repeat;
+    }
+    & pfpwrapper {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        position: relative;
+        top: -50px;
+        left: 25px;
         background: url(https://static.wikitide.net/lgbtqiawiki/0/0e/Rat_ace_flag.png);
-        background-size: 450px 100px;
+        border-radius: 100%;
+        background-size: 450px 150px;
+        background-position-x: -20px;
         background-repeat: no-repeat;
-}
-& pfpwrapper {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    position: relative;
-    top: -50px;
-    left: 25px;
-    background: url(https://static.wikitide.net/lgbtqiawiki/0/0e/Rat_ace_flag.png);
-    border-radius: 100%;
-    background-size: 450px 150px;
-    background-position-x: -20px;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-& pfpwrapper>img {
-    width: 140px;
-    height: 140px;
-    border-radius: 100%;
-    background: var(--discorddarkgray);
-}
-& profiledetails {
-    width: calc(100% - 90px);
-    height: 160px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-    bottom: 125px;
-    left: 25px;
-    background: var(--discorddarkhighlight);
-    border-radius: 0px 15px 15px;
-    padding: 20px;
-}
-& left {
-    height: calc(100% - 70px);
-    width: 110px;
-    padding-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-& left>span>img, right>email>img {
-    max-width: 15px;
-    filter: invert(1);
-    margin-right: 5px;
-    max-height: 15px;
-}
-& left>span {
-    font-size: 9px;
-    display: flex;
-    align-items: center;
-}
-& a {
-    color: unset;
-    text-decoration: unset;
-}
-& left>span:not(:last-of-type) {
-    margin-bottom: 10px;
-}
-& a:hover {
-    text-decoration: underline;
-}
-& left>span#threadslink>img {
-    margin-right: 7px;
-}
-& right {
-    height: 100%;
-    text-align: right;
-    font-weight: 900;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 210px;
-}
-& profiledetails {
-    color: var(--notquitewhite);
-    font-family: consolas, monospace, ui-monospace;
-}
-& right>mainname {
-    font-size: 32px;
-}
-& pronouns {
-    font-weight: 100;
-}
-& subtext>*:not(:last-child)::after {
-    content: " · ";
-}
-& badge:not(:last-child) {/* margin-right: 6px; */}
-& subtext {
-    margin-bottom: 4px;
-}
-& badge {
-    padding: 4px 8px;
-    border-radius: 4px;
-    user-select: none;
-    webkit-user-drag: none;
-    webkit-user-modify: none;
-    webkit-user-select: none;
-    background-color: white;
-    font-size: 12px;
-}
-& badge[badge="WD"] {background: var(--WebDeveloper);}
-& badge[badge="PM"] {background: var(--ProjectManager);}
-& badge[badge="LD"] {color: var(--LeadDeveloper);}
-& badge[badge="DEV"] {color: var(--Developer);}
-& badge[badge="JD"] {color: var(--JuniorDeveloper);}
-& badge[badge="WR"] {color: var(--Writer);}
-& badge[badge="JWR"] {color: var(--JuniorWriter);}
-& badge[badge="LS"] {color: var(--LanguagesAdvisor);}
-& badge[badge="GD"] {color: var(--GraphicsDesigner);}
-& badge[badge="TST"] {color: var(--Tester);}
-& badge:not(:hover)>full {display: none;}
-& badge:hover>preview {display: none;}
-& email {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    font-size: 9px;
-    margin-bottom: 10px;
-}
-& gamebadges {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    height: -webkit-fill-available;
-    margin-top: 4px;
-    overflow-y: auto;
-    line-height: 24px;
-    font-size: 12px;
-}
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    & pfpwrapper>img {
+        width: 140px;
+        height: 140px;
+        border-radius: 100%;
+        background: var(--discorddarkgray);
+    }
+    & profiledetails {
+        width: calc(100% - 90px);
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        bottom: 125px;
+        left: 25px;
+        background: var(--discorddarkhighlight);
+        border-radius: 0px 15px 15px;
+        padding: 20px;
+    }
+    & left {
+        height: calc(100% - 70px);
+        width: 110px;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & left>span>img, right>email>img {
+        max-width: 15px;
+        filter: invert(1);
+        margin-right: 5px;
+        max-height: 15px;
+    }
+    & left>span {
+        font-size: 9px;
+        display: flex;
+        align-items: center;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
+    }
+    & left>span:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    & a:hover {
+        text-decoration: underline;
+    }
+    & left>span#threadslink>img {
+        margin-right: 7px;
+    }
+    & right {
+        height: 100%;
+        text-align: right;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 210px;
+    }
+    & profiledetails {
+        color: var(--notquitewhite);
+        font-family: consolas, monospace, ui-monospace;
+    }
+    & right>mainname {
+        font-size: 32px;
+    }
+    & pronouns {
+        font-weight: 100;
+    }
+    & subtext>*:not(:last-child)::after {
+        content: " · ";
+    }
+
+    & subtext {
+        margin-bottom: 4px;
+    }
+    & badge {
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        user-select: none;
+        webkit-user-drag: none;
+        webkit-user-modify: none;
+        webkit-user-select: none;
+        background-color: white;
+    }
+    & badge[badge="WD"] {background: var(--WebDeveloper);}
+    & badge[badge="PM"] {background: var(--ProjectManager);}
+    & badge[badge="LD"] {color: var(--LeadDeveloper);}
+    & badge[badge="DEV"] {color: var(--Developer);}
+    & badge[badge="JD"] {color: var(--JuniorDeveloper);}
+    & badge[badge="WR"] {color: var(--Writer);}
+    & badge[badge="JWR"] {color: var(--JuniorWriter);}
+    & badge[badge="LS"] {color: var(--LanguagesAdvisor);}
+    & badge[badge="GD"] {color: var(--GraphicsDesigner);}
+    & badge[badge="TST"] {color: var(--Tester);}
+    & badge:not(:hover)>full {display: none;}
+    & badge:hover>preview {display: none;}
+    & email {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    & gamebadges {
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: -webkit-fill-available;
+        margin-top: 4px;
+        overflow-y: auto;
+        line-height: 24px;
+    }
 }
 
 dialog#zem0modal {
@@ -342,11 +342,12 @@ dialog#zem0modal {
     & subtext>*:not(:last-child)::after {
         content: " · ";
     }
-    & badge:not(:last-child) {margin-right: 6px;}
+    
     & subtext {
         margin-bottom: 4px;
     }
     & badge {
+    font-size: 12px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -375,6 +376,7 @@ dialog#zem0modal {
         margin-bottom: 10px;
     };
     & gamebadges {
+    font-size: 12px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -493,11 +495,12 @@ dialog#slovaktasticmodal {
     & subtext>*:not(:last-child)::after {
         content: " · ";
     }
-    & badge:not(:last-child) {margin-right: 6px;}
+    
     & subtext {
         margin-bottom: 4px;
     }
     & badge {
+    font-size: 12px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -526,6 +529,7 @@ dialog#slovaktasticmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+    font-size: 12px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -644,11 +648,12 @@ dialog#weixmodal {
     & subtext>*:not(:last-child)::after {
         content: " · ";
     }
-    & badge:not(:last-child) {margin-right: 6px;}
+    
     subtext {
         margin-bottom: 4px;
     }
     & badge {
+    font-size: 12px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -677,6 +682,7 @@ dialog#weixmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+    font-size: 12px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -795,11 +801,12 @@ dialog#tomoproskmodal {
     & subtext>*:not(:last-child)::after {
         content: " · ";
     }
-    & badge:not(:last-child) {margin-right: 6px;}
+    
     & subtext {
         margin-bottom: 4px;
     }
     & badge {
+    font-size: 12px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -828,6 +835,7 @@ dialog#tomoproskmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+    font-size: 12px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -942,11 +950,12 @@ dialog#hoštymodal {
     & subtext>*:not(:last-child)::after {
         content: " · ";
     }
-    & badge:not(:last-child) {margin-right: 6px;}
+    
     & subtext {
         margin-bottom: 4px;
     }
     & badge {
+    font-size: 12px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -975,6 +984,7 @@ dialog#hoštymodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+    font-size: 12px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -1093,11 +1103,12 @@ dialog#oleksmodal {
     & subtext>*:not(:last-child)::after {
         content: " · ";
     }
-    & badge:not(:last-child) {margin-right: 6px;}
+    
     & subtext {
         margin-bottom: 4px;
     }
     & badge {
+    font-size: 12px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -1126,6 +1137,7 @@ dialog#oleksmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+    font-size: 12px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -1244,11 +1256,12 @@ dialog#timmodal {
     & subtext>*:not(:last-child)::after {
         content: " · ";
     }
-    & badge:not(:last-child) {margin-right: 6px;}
+    
     & subtext {
         margin-bottom: 4px;
     }
     & badge {
+    font-size: 12px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -1277,6 +1290,7 @@ dialog#timmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+    font-size: 12px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
