@@ -167,9 +167,8 @@ dialog#kanshenmodal {
     margin-right: 7px;
 }
 & right {
-        height: 100%;
-    text-align: right;
     height: 100%;
+    text-align: right;
     font-weight: 900;
     display: flex;
     flex-direction: column;
