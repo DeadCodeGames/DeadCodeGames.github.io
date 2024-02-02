@@ -222,6 +222,7 @@ dialog#kanshenmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+        line-height: 24px;
         font-size: 12px;
         display: flex;
         flex-direction: column;
@@ -230,7 +231,6 @@ dialog#kanshenmodal {
         height: -webkit-fill-available;
         margin-top: 4px;
         overflow-y: auto;
-        line-height: 24px;
     }
 }
 
@@ -376,6 +376,7 @@ dialog#zem0modal {
         margin-bottom: 10px;
     };
     & gamebadges {
+        line-height: 24px;
     font-size: 12px;
         display: flex;
         flex-direction: column;
@@ -529,6 +530,7 @@ dialog#slovaktasticmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+        line-height: 24px;
     font-size: 12px;
         display: flex;
         flex-direction: column;
@@ -682,6 +684,7 @@ dialog#weixmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+        line-height: 24px;
     font-size: 12px;
         display: flex;
         flex-direction: column;
@@ -835,6 +838,7 @@ dialog#tomoproskmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+        line-height: 24px;
     font-size: 12px;
         display: flex;
         flex-direction: column;
@@ -984,6 +988,7 @@ dialog#hoštymodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+        line-height: 24px;
     font-size: 12px;
         display: flex;
         flex-direction: column;
@@ -1137,6 +1142,7 @@ dialog#oleksmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+        line-height: 24px;
     font-size: 12px;
         display: flex;
         flex-direction: column;
@@ -1290,6 +1296,7 @@ dialog#timmodal {
         margin-bottom: 10px;
     }
     & gamebadges {
+        line-height: 24px;
     font-size: 12px;
         display: flex;
         flex-direction: column;
