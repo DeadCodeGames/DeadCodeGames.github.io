@@ -1319,3 +1319,7 @@ span#escape {
     color: white;
     letter-spacing: 2.5px;
 }
+
+dialog gamebadges badge:not(:last-of-type) {
+    margin-right: 5px;
+}
