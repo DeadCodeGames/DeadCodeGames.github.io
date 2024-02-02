@@ -167,6 +167,7 @@ dialog#kanshenmodal {
     margin-right: 7px;
 }
 & right {
+        height: 100%;
     text-align: right;
     height: 100%;
     font-weight: 900;
@@ -321,6 +322,7 @@ dialog#zem0modal {
         margin-right: 7px;
     }
     & right {
+        height: 100%;
         text-align: right;
         font-weight: 900;
         display: flex;
@@ -379,7 +381,7 @@ dialog#zem0modal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 25px;
+        margin-top: 4px;
         overflow-y: auto;
     }
 }
@@ -471,6 +473,7 @@ dialog#slovaktasticmodal {
         margin-right: 7px;
     }
     & right {
+        height: 100%;
         text-align: right;
         font-weight: 900;
         display: flex;
@@ -529,7 +532,7 @@ dialog#slovaktasticmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 25px;
+        margin-top: 4px;
         overflow-y: auto;
     }
 }
@@ -621,6 +624,7 @@ dialog#weixmodal {
         margin-right: 7px;
     }
     & right {
+        height: 100%;
         text-align: right;
         font-weight: 900;
         display: flex;
@@ -679,7 +683,7 @@ dialog#weixmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 25px;
+        margin-top: 4px;
         overflow-y: auto;
     }
 }
@@ -771,6 +775,7 @@ dialog#tomoproskmodal {
         margin-right: 7px;
     }
     & right {
+        height: 100%;
         text-align: right;
         font-weight: 900;
         display: flex;
@@ -829,7 +834,7 @@ dialog#tomoproskmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 25px;
+        margin-top: 4px;
         overflow-y: auto;
     }
 }
@@ -917,6 +922,7 @@ dialog#hoštymodal {
         margin-right: 7px;
     }
     & right {
+        height: 100%;
         text-align: right;
         font-weight: 900;
         display: flex;
@@ -975,7 +981,7 @@ dialog#hoštymodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 25px;
+        margin-top: 4px;
         overflow-y: auto;
     }
 }
@@ -1067,6 +1073,7 @@ dialog#oleksmodal {
         margin-right: 7px;
     }
     & right {
+        height: 100%;
         text-align: right;
         font-weight: 900;
         display: flex;
@@ -1125,7 +1132,7 @@ dialog#oleksmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 25px;
+        margin-top: 4px;
         overflow-y: auto;
     }
 }
@@ -1217,6 +1224,7 @@ dialog#timmodal {
         margin-right: 7px;
     }
     & right {
+        height: 100%;
         text-align: right;
         font-weight: 900;
         display: flex;
@@ -1275,7 +1283,7 @@ dialog#timmodal {
         align-items: flex-end;
         width: 100%;
         height: -webkit-fill-available;
-        margin-top: 25px;
+        margin-top: 4px;
         overflow-y: auto;
     }
 }
