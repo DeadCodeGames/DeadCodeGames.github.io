@@ -201,6 +201,7 @@ dialog#kanshenmodal {
         webkit-user-modify: none;
         webkit-user-select: none;
         background-color: white;
+        line-height: 24px;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -219,7 +220,7 @@ dialog#kanshenmodal {
         align-content: center;
         align-items: center;
         font-size: 9px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     & gamebadges {
         line-height: 24px;
@@ -347,7 +348,7 @@ dialog#zem0modal {
         margin-bottom: 4px;
     }
     & badge {
-    font-size: 10px;
+        font-size: 10px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -355,6 +356,7 @@ dialog#zem0modal {
         webkit-user-modify: none;
         webkit-user-select: none;
         background-color: white;
+        line-height: 24px;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -373,7 +375,7 @@ dialog#zem0modal {
         align-content: center;
         align-items: center;
         font-size: 9px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     };
     & gamebadges {
         line-height: 24px;
@@ -501,7 +503,7 @@ dialog#slovaktasticmodal {
         margin-bottom: 4px;
     }
     & badge {
-    font-size: 10px;
+        font-size: 10px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -509,6 +511,7 @@ dialog#slovaktasticmodal {
         webkit-user-modify: none;
         webkit-user-select: none;
         background-color: white;
+        line-height: 24px;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -527,7 +530,7 @@ dialog#slovaktasticmodal {
         align-content: center;
         align-items: center;
         font-size: 9px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     & gamebadges {
         line-height: 24px;
@@ -655,7 +658,7 @@ dialog#weixmodal {
         margin-bottom: 4px;
     }
     & badge {
-    font-size: 10px;
+        font-size: 10px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -663,6 +666,7 @@ dialog#weixmodal {
         webkit-user-modify: none;
         webkit-user-select: none;
         background-color: white;
+        line-height: 24px;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -681,7 +685,7 @@ dialog#weixmodal {
         align-content: center;
         align-items: center;
         font-size: 9px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     & gamebadges {
         line-height: 24px;
@@ -809,7 +813,7 @@ dialog#tomoproskmodal {
         margin-bottom: 4px;
     }
     & badge {
-    font-size: 10px;
+        font-size: 10px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -817,6 +821,7 @@ dialog#tomoproskmodal {
         webkit-user-modify: none;
         webkit-user-select: none;
         background-color: white;
+        line-height: 24px;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -835,7 +840,7 @@ dialog#tomoproskmodal {
         align-content: center;
         align-items: center;
         font-size: 9px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     & gamebadges {
         line-height: 24px;
@@ -959,7 +964,7 @@ dialog#hoštymodal {
         margin-bottom: 4px;
     }
     & badge {
-    font-size: 10px;
+        font-size: 10px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -967,6 +972,7 @@ dialog#hoštymodal {
         webkit-user-modify: none;
         webkit-user-select: none;
         background-color: white;
+        line-height: 24px;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -985,7 +991,7 @@ dialog#hoštymodal {
         align-content: center;
         align-items: center;
         font-size: 9px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     & gamebadges {
         line-height: 24px;
@@ -1113,7 +1119,7 @@ dialog#oleksmodal {
         margin-bottom: 4px;
     }
     & badge {
-    font-size: 10px;
+        font-size: 10px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -1121,6 +1127,7 @@ dialog#oleksmodal {
         webkit-user-modify: none;
         webkit-user-select: none;
         background-color: white;
+        line-height: 24px;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -1139,7 +1146,7 @@ dialog#oleksmodal {
         align-content: center;
         align-items: center;
         font-size: 9px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     & gamebadges {
         line-height: 24px;
@@ -1267,7 +1274,7 @@ dialog#timmodal {
         margin-bottom: 4px;
     }
     & badge {
-    font-size: 10px;
+        font-size: 10px;
         padding: 4px 8px;
         border-radius: 4px;
         user-select: none;
@@ -1275,6 +1282,7 @@ dialog#timmodal {
         webkit-user-modify: none;
         webkit-user-select: none;
         background-color: white;
+        line-height: 24px;
     }
     & badge[badge="WD"] {background: var(--WebDeveloper);}
     & badge[badge="PM"] {background: var(--ProjectManager);}
@@ -1293,7 +1301,7 @@ dialog#timmodal {
         align-content: center;
         align-items: center;
         font-size: 9px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     & gamebadges {
         line-height: 24px;
