@@ -21,4 +21,13 @@
         <ol><li><span>used to describe someone or something that is missing or not very intelligent</span></li></ol>
         <logo>××</logo>
     </body>
+    <script>
+        const validDirectories = ["DeadForge", "RestoreBackup"];
+        const path = window.location.pathname;
+        validDirectories.forEach(directory => {
+            if (directory.toLowerCase() === path.toLowerCase()) {
+                window.location.href = "/" + directory;
+            }
+        })
+    </script>
 </html>
