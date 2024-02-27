@@ -22,11 +22,11 @@
         <logo>××</logo>
     </body>
     <script>
-        const validDirectories = ["DeadForge", "RestoreBackup"];
+        const validDirectories = ["/DeadForge", "/RestoreBackup"];
         const path = window.location.pathname;
         validDirectories.forEach(directory => {
             if (directory.toLowerCase() == path.toLowerCase()) {
-                window.location.pathname = "/" + directory;
+                window.location.pathname = directory;
             }
         })
     </script>
