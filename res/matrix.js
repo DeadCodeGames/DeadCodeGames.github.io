@@ -18,8 +18,6 @@ for (var i = 0; i < columns; i++) {
 }
 
 function draw() {
-  canvas.width = window.innerWidth;
-  canvas.height = 215;
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
   } else {
