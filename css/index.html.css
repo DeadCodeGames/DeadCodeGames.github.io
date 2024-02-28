@@ -390,6 +390,9 @@ button#gitbutton:hover {
 
 section#projects {
     padding: 0;
+    & subsection {
+        width: 100%;
+    }
     & > subsection#deadforge {
         display: flex;
         flex-direction: row;
@@ -401,6 +404,24 @@ section#projects {
             height: 215px;
             position: absolute;
             left: 0;
+            z-index: -1;
+        }
+        & heading {
+            font-family: 'Uni Sans CAPS';
+            font-weight: bold;
+            font-size: 64px;
+        }
+        
+        & subheading {
+            font-family: 'Uni Sans CAPS';
+            font-size: 32px;
+            font-weight: normal;
+        }
+        
+        & left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
