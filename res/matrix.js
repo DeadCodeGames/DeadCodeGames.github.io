@@ -1,7 +1,7 @@
 var canvas = document.querySelector('canvas'),
     ctx    = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
+canvas.width = 1920;
 canvas.height = 215;
 
 var katakana = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポヰヱ';
