@@ -113,6 +113,44 @@ header header-item {
         background-color: var(--color-cnf);
         color: var(--notquitewhite);
     }
+
+    subsection#deadforge {
+        background-color: var(--color-cfb);
+        color: var(--notquitewhite);
+    }
+
+    button#deadforgebutton {
+        background: var(--notquitewhite);
+        width: 300px;
+        height: 100px;
+        border-radius: 15px;
+        border-color: var(--notquiteblack);
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: 'Uni Sans CAPS';
+        font-weight: bold;
+        border-style: solid;
+        color: var(--notquiteblack);
+        border-width: 3;
+        transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
+        font-size: 32px;
+    }
+    
+    button#deadforgebutton:hover {
+        background: transparent;
+        width: 300px;
+        height: 100px;
+        border-radius: 15px;
+        border-color: var(--notquitewhite);
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: 'Uni Sans CAPS';
+        font-weight: bold;
+        border-style: solid;
+        color: var(--notquitewhite);
+        border-width: 3px;
+        transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -130,6 +168,44 @@ header header-item {
     header:hover, footer:hover {
         background-color: var(--color-cfb);
         color: var(--notquiteblack);
+    }
+
+    subsection#deadforge {
+        background-color: var(--color-cnf);
+        color: var(--notquiteblack);
+    }
+
+    button#deadforgebutton {
+        background: var(--notquiteblack);
+        width: 300px;
+        height: 100px;
+        border-radius: 15px;
+        border-color: var(--notquitewhite);
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: 'Uni Sans CAPS';
+        font-weight: bold;
+        border-style: solid;
+        color: var(--notquitewhite);
+        border-width: 3;
+        transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
+        font-size: 32px;
+    }
+    
+    button#deadforgebutton:hover {
+        background: transparent;
+        width: 300px;
+        height: 100px;
+        border-radius: 15px;
+        border-color: var(--notquiteblack);
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: 'Uni Sans CAPS';
+        font-weight: bold;
+        border-style: solid;
+        color: var(--notquiteblack);
+        border-width: 3px;
+        transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
     }
 }
 
@@ -310,4 +386,21 @@ button#gitbutton:hover {
     color: var(--notquitewhite);
     border-width: 3px;
     transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
+}
+
+section#projects {
+    padding: 0;
+    & > subsection#deadforge {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 215px;
+        justify-content: space-evenly;
+        & > canvas {
+            width: 100%;
+            height: 215px;
+            position: absolute;
+            left: 0;
+        }
+    }
 }
