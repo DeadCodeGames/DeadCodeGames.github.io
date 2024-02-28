@@ -1,5 +1,12 @@
 var canvas = document.querySelector('canvas'),
-    ctx    = canvas.getContext('2d');
+  ctx = canvas.getContext('2d');
+    
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    ctx.fillStyle = 'rgba(100, 149, 237, 1)';
+  } else {
+    ctx.fillStyle = 'rgba(68, 0, 68, 1)';
+  }
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 var katakana = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポヰヱ';
 var hiragana = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゐゑ';
