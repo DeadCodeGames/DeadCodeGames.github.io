@@ -1,5 +1,8 @@
 var canvas = document.querySelector('canvas'),
   ctx = canvas.getContext('2d');
+
+  canvas.width = window.innerWidth;
+  canvas.height = 215;
     
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     ctx.fillStyle = 'rgba(100, 149, 237, 1)';
