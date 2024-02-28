@@ -10,6 +10,7 @@
     --discordlightgray: #313338;
     --discorddarkgray: #2a2d31;
     --discordtext: #b3bac1;
+    overflow-x: hidden;
 }
 
 /*Custom Scrollbar */
@@ -398,7 +399,7 @@ section#projects {
         height: 215px;
         justify-content: space-evenly;
         & > canvas {
-            width: 100%;
+            width: 1920px;
             height: 215px;
             position: absolute;
             left: 0;

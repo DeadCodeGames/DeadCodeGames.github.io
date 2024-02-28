@@ -1,12 +1,8 @@
 var canvas = document.querySelector('canvas'),
-  ctx = canvas.getContext('2d');
-    
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    ctx.fillStyle = 'rgba(100, 149, 237, 1)';
-  } else {
-    ctx.fillStyle = 'rgba(68, 0, 68, 1)';
-  }
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx    = canvas.getContext('2d');
+
+canvas.width = 1920;
+canvas.height = 215;
 
 var katakana = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポヰヱ';
 var hiragana = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゐゑ';
@@ -15,14 +11,13 @@ var letters = (katakana + hiragana).split("");
 var fontSize = 16,
     columns = canvas.width / fontSize;
 
+
 var drops = [];
 for (var i = 0; i < columns; i++) {
   drops[i] = 1;
 }
 
 function draw() {
-  canvas.width = window.innerWidth;
-  canvas.height = 215;
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
   } else {
