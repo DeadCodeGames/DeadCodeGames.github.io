@@ -236,6 +236,7 @@ profilessection {
     justify-content: center;
     align-items: center;
     color: var(--notquitewhite) !important;
+    row-gap: 20px;
 }
 
 hr {
