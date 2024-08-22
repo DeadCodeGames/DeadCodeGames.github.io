@@ -425,3 +425,16 @@ section#projects {
         }
     }
 }
+
+button#deadforgebutton.uwu {
+    font-size: 28px;
+    pointer-events: none;
+    & img {
+        top: -2px;
+        margin-left: 4px;
+    }
+}
+
+a:has(button#deadforgebutton.uwu) {
+    pointer-events: none;
+}

@@ -359,6 +359,25 @@
                     <a href="/redirect?id=ZGVhZGZvcmdl" target="_blank"><button id="deadforgebutton">Download</button></a>
                 </right>
                 <canvas></canvas>
+                <script>window.addEventListener("message", (event) => {
+                    const isFromLauncher = (
+                      event.origin === "http://localhost:3000" || 
+                      (event.origin.startsWith("file://") && event.origin.endsWith("/deadforge/resources/app.asar/index.html"))
+                    );
+                  
+                    if (isFromLauncher) {
+                      console.log("Received message from parent:", event.data);
+                      
+                      // Change the button text if the message is valid
+                      const button = document.querySelector("button#deadforgebutton")
+                      if (button) {
+                        button.innerHTML = 'TY 4 USING DEADFORGE <img id="heartemoji" src="https://em-content.zobj.net/source/twitter/154/heavy-black-heart_2764.png" draggable="false">';
+                        button.classList.add("uwu");
+                      }
+                    } else {
+                      console.warn("Received message from unknown origin:", event.origin);
+                    }
+                  });</script>
                 </subsection>
         </section>
         <footer>
