@@ -295,6 +295,16 @@ div#githublogo>img#gittextlogo {
     margin-left: 5px;
 }
 
+@media only screen and (max-width: 845px) {
+    section#socials {
+        flex-direction: column;
+        height: 510px;
+        & socialcard {
+            width: 100%;
+        }
+    }
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -325,8 +335,16 @@ section:last-of-type {
     margin-bottom: 50px;
 }
 
-footer span:not(:last-of-type)::after {
-    content: " · "
+@media only screen and (min-width: 698px) {
+    footer span:not(:last-of-type)::after {
+        content: " · "
+    }
+}
+
+@media only screen and (max-width: 697px) {
+    footer {
+        flex-direction: column
+    }
 }
 
 @keyframes pulse {
@@ -437,4 +455,18 @@ button#deadforgebutton.uwu {
 
 a:has(button#deadforgebutton.uwu) {
     pointer-events: none;
+}
+
+@media only screen and (max-width: 800px) {
+    subsection#deadforge {
+        flex-direction: column !important;
+        & left {
+            & heading {
+                font-size: 32px !important;
+            }
+            & subheading {
+                font-size: 16px !important;
+            }
+        }
+    }
 }

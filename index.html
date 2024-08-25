@@ -378,6 +378,21 @@
                       console.warn("Received message from unknown origin:", event.origin);
                     }
                   });</script>
+                  <script>
+                    document.addEventListener('click', function(event) {
+                        // Select the open dialog element
+                        const dialog = document.querySelector('dialog[open]');
+                        console.log(dialog)
+                    
+                        if (dialog) {
+                            // Check if the click was outside the dialog
+                            if (!dialog.querySelector("modal").contains(event.target) && !dialog.parentElement.querySelector("modalpreview").contains(event.target)) {
+                                // Close the dialog
+                                dialog.close();
+                            }
+                        }
+                    });
+                  </script>
                 </subsection>
         </section>
         <footer>
