@@ -362,7 +362,7 @@
                 <script>window.addEventListener("message", (event) => {
                     const isFromLauncher = (
                       event.origin === "http://localhost:3000" || 
-                      (event.origin.startsWith("file://") && event.origin.endsWith("/deadforge/resources/app.asar/index.html"))
+                      (event.origin.startsWith("file://") && event.srcElement.clientInformation.userAgent.includes("deadforge") && event.srcElement.clientInformation.userAgent.includes("Electron"))
                     );
                   
                     if (isFromLauncher) {
@@ -375,7 +375,7 @@
                         button.classList.add("uwu");
                       }
                     } else {
-                      console.warn("Received message from unknown origin:", event.origin);
+                      console.warn("Received message from unknown origin:", event.origin == "file://" ? "A local file." : event.origin);
                     }
                   });</script>
                   <script>

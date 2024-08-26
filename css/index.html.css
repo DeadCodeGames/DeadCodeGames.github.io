@@ -134,6 +134,7 @@ header header-item {
         border-width: 3;
         transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
         font-size: 32px;
+        mix-blend-mode: screen;
     }
     
     button#deadforgebutton:hover {
@@ -189,6 +190,7 @@ header header-item {
         border-width: 3;
         transition: all 0.25s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0s;
         font-size: 32px;
+        mix-blend-mode: screen;
     }
     
     button#deadforgebutton:hover {
