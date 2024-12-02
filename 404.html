@@ -23,7 +23,7 @@
     </body>
     <script>
         const validDirectories = ["/DeadForge", "/RestoreBackup", "/WikiPhilosophyGame"];
-        const path = window.location.pathname;
+        const path = window.location.pathname.replace(/\/$/, '');
         validDirectories.forEach(directory => {
             if (directory.toLowerCase() == path.toLowerCase()) {
                 window.location.pathname = directory;
