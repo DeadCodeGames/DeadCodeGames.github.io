@@ -31,7 +31,7 @@
         gtag('config', 'G-HYFP6LV9FT');
         </script>
         <script src="/res/localization/locale.js"></script>
-        <link rel="stylesheet" href="/res/discordinvite/discordInvite.css">
+        <link rel="stylesheet" href="./res/discordinvite/discordInvite.css">
         <!-- -Social Media :3 - -->
         <link rel="me" href="https://woof.tech/@kanskje00">
     </head>
@@ -44,26 +44,26 @@
             <sectiontext string="introtext">we are a small student developer group from slovakia</sectiontext>
             <profilessection>
                 <pfpwrapper onclick="document.querySelector('dialog#kanshenmodal').showModal()">
-                    <img src="/images/pfp/pfp.kanshen.png">
-                    <modalpreview>kanshen</modalpreview>
+                    <img src="/images/pfp/pfp.kanskje.jpg">
+                    <modalpreview>kanskje</modalpreview>
                     <dialog id="kanshenmodal">
                         <span id="escape">Press ESC to Close</span>
                         
                         <modal>
                             <banner></banner>
-                            <pfpwrapper><img src="/images/pfp/pfp.kanshen.png"></pfpwrapper>
+                            <pfpwrapper><img src="/images/pfp/pfp.kanskje.jpg"></pfpwrapper>
                             <profiledetails>
                                 <left>
                                     <span><img src="/images/icons/icon.web.png"><a href="/redirect?id=a2Fuc2hlbmNsaWNr" target="_blank">kanshen.click</a></span>
                                     <span><img src="/images/icons/icon.github.png"><a href="/redirect?id=a2Fuc2hlbmdpdGh1Yg" target="_blank">@RichardKanshen</a></span>
-                                    <span><img src="/images/icons/icon.instagram.png"><a href="/redirect?id=a2Fuc2hlbmluc3RhZ3JhbQ" target="_blank">@richard._.kanshen</a></span>
-                                    <span id="threadslink"><img src="/images/icons/icon.threads.png"><a href="/redirect?id=a2Fuc2hlbnRocmVhZHM" target="_blank">@richard._.kanshen</a></span>
+                                    <span><img src="/images/icons/icon.bsky.png"><a href="/redirect?id=a2Fuc2hlbmJza3k" target="_blank">bsky.kanshen.click</a></span>
+                                    <span><img src="/images/icons/icon.vocadb.png"><a href="/redirect?id=a2Fuc2hlbnZvY2FkYg" target="_blank">出口レイ</a></span>
                                 </left>
                                 <right>
-                                    <mainname>kanshen</mainname>
+                                    <mainname>kanskje</mainname>
                                     <subtext>
                                         <subname>richard</subname>
-                                        <pronouns><a href="/redirect?id=a2Fuc2hlbnByb25vdW5z" target="_blank">he/〇/him</a></pronouns>
+                                        <pronouns><a href="/redirect?id=a2Fuc2hlbnByb25vdW5z" target="_blank">he/they/any</a></pronouns>
                                     </subtext>
                                     <email>
                                         <img src="/images/icons/icon.mail.png">
@@ -228,14 +228,14 @@
                 </modal></dialog></pfpwrapper>
                 
                 <pfpwrapper onclick="document.querySelector('dialog#hoštymodal').showModal()">
-                    <img src="/images/pfp/pfp.hošty.png">
+                    <img src="/images/pfp/pfp.hošty.webp">
                 <modalpreview>hošty</modalpreview><dialog id="hoštymodal">
                 <span id="escape">Press ESC to Close</span>
                 
                 <modal>
                 <banner></banner>
                 <pfpwrapper>
-                    <img src="/images/pfp/pfp.hošty.png">
+                    <img src="/images/pfp/pfp.hošty.webp">
                 </pfpwrapper>
                 <profiledetails>
                     <left>
@@ -363,10 +363,10 @@
                 <canvas></canvas>
                 <script>window.addEventListener("message", (event) => {
                     const isFromLauncher = (
-                      event.origin === "http://localhost:3000" || 
-                      (event.origin.startsWith("file://") && event.srcElement.clientInformation.userAgent.includes("deadforge") && event.srcElement.clientInformation.userAgent.includes("Electron"))
+                        ((event.origin === "http://localhost:3000" ||
+                            event.origin.startsWith("file://")) && event.srcElement.clientInformation.userAgent.includes("deadforge") && event.srcElement.clientInformation.userAgent.includes("Electron"))
                     );
-                  
+
                     if (isFromLauncher) {
                       console.log("Received message from parent:", event.data);
                       
@@ -402,8 +402,8 @@
         </footer>
     </body>
     <!-- - Discord Invite - -->
-    <script src="/res/discordinvite/discordInvite.js"></script>
-    <script>discordInvite.init({inviteCode: 'Pxqd52hcV2', title: '××'}); discordInvite.render();</script>
+    <script src="./res/discordinvite/discordInvite.js"></script>
+    <script defer>discordInvite.init({inviteCode: 'Pxqd52hcV2', title: '××'}); discordInvite.render();</script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/res/matrix.js"></script>
 </html>
